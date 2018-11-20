@@ -1,7 +1,7 @@
 if (!require(readxl)) install.packages('readxl')
 library(readxl)
 
-df <- read_excel(file.choose())
+df <- read_excel("dados/umses_alunos_2018.xlsx")
 
 head(df, 3)
 
@@ -104,7 +104,7 @@ dev.off()
 #===============================================
 
 #======= Trabalho de dados - Número de Usuarios por rede social ===========
-sm <- read_excel(file.choose())
+sm <- read_excel("dados/redessociais.xlsx")
 sm
 png(filename="grafico/aed_survey_redes_socias.png", width = 1920, height = 1080, pointsize = 16)
 barplot(sm$Usuarios, main = "Numero de usuários por rede Social", names.arg = sm$`Rede Social`, ylim = c(0, 70)) 
@@ -112,7 +112,7 @@ dev.off()
 #===============================================
 
 #====== Trabalho de dados - Motivos de uso =========
-mu <- read_excel(file.choose())
+mu <- read_excel("dados/motivos_uso.xlsx")
 mu 
 png(filename="grafico/aed_survey_motivos_uso.png", width = 1920, height = 1080, pointsize = 16)
 barplot(mu$X__1, main = "Principais usos das redes sociais", names.arg = mu$Motivos, ylim = c(0, 70)) 
@@ -176,7 +176,7 @@ dev.off()
 #===================================================
 
 #====== Trabalho de dados - Principais dificuldades =========
-pd <- read_excel(file.choose())
+pd <- read_excel("dados/principais_dificuldades.xlsx")
 pd 
 png(filename="grafico/aed_survey_principais_dificuldades.png", width = 1920, height = 1080, pointsize = 16)
 barplot(pd$X__1, main = "Principais dificuldades", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70)) 
