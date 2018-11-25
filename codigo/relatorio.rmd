@@ -3,7 +3,7 @@ title: "Relatório"
 output: html_document
 ---
 
-````{r echo=FALSE, message=FALSE}
+````{r include=FALSE}
 if (!require(readxl)) install.packages('readxl')
 library(readxl)
 
