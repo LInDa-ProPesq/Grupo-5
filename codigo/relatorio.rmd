@@ -29,7 +29,32 @@ Analisando o gráfico acima, podemos perceber que a utilização das redes socia
 
 ### O que fazem nas mídias sociais quem julga que os alunos alcaçarão melhores resultados se elas estiverem integradas às aulas e/ou atividades?
 
-[[GRAFICO LUCAS]]
+```{r echo=FALSE}
+contato <- df[df$contato == 1,]
+atualizado <- df[df$atualizado == 1,]
+preencher <- df[df$preencher == 1,]
+encontrar <- df[df$encontrar == 1,]
+compopiniao <- df[df$compopiniao == 1,]
+compfoto <- df[df$compfoto == 1,]
+amigosja <- df[df$amigosja == 1,]
+profnetwork <- df[df$profnetwork == 1,]
+novaamizade <- df[df$novaamizade == 1,]
+compdetalhe <- df[df$compdetalhe == 1,]
+x<-c(table(contato$melhoraresul)[2], table(atualizado$melhoraresul)[2],
+     table(preencher$melhoraresul)[2], table(encontrar$melhoraresul)[2],
+     table(compopiniao$melhoraresul)[2], table(compfoto$melhoraresul)[2],
+     table(amigosja$melhoraresul)[2], table(profnetwork$melhoraresul)[2],
+     table(novaamizade$melhoraresul)[2], table(compdetalhe$melhoraresul)[2])
+n<-c("Para ficar em contato com o que os amigos estão fazendo",
+     "Para manter-se atualizado com notícias e eventos atuais",
+     "Para preencher o tempo livre",
+     "Para encontrar conteúdo interessante e/ou divertido",
+     "Para compartilhar opiniões",
+     "Para compartilhar fotos ou vídeos com outras pessoas",
+     "Conhecer novas pessoas",
+     "Compartilhar detalhes e assuntos de trabalho")
+pie(x, labels = n)
+```
 
 Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais para compartilhamento de fotos e vídeos são as pessoas que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
 
