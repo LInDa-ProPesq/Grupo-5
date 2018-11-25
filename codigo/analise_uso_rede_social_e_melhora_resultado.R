@@ -14,7 +14,7 @@ profnetwork <- df[df$profnetwork == 1,]
 novaamizade <- df[df$novaamizade == 1,]
 compdetalhe <- df[df$compdetalhe == 1,]
 
-aprox=table(atualizado$melhoraresul)
+aprox=table(contato$melhoraresul)
 aprox
 lblap <- c("Não", "Sim", "Não sei/Não tenho opinião")
 pctap <- round(aprox/sum(aprox)*100, digits=1)
