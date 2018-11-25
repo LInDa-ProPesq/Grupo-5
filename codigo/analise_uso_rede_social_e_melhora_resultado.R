@@ -20,7 +20,7 @@ lblap <- c("Não", "Sim", "Não sei/Não tenho opinião")
 pctap <- round(aprox/sum(aprox)*100, digits=1)
 pctap
 lblap <- paste0(pctap, "%", lblap)
-cat(" Para ficar em contato com o que os amigos estão fazendo", lblap)
+cat("Para ficar em contato com o que os amigos estão fazendo", lblap)
 
 aprox=table(atualizado$melhoraresul)
 aprox
