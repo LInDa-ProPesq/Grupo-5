@@ -58,5 +58,13 @@ pie(x, labels = n)
 
 Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais para compartilhamento de fotos e vídeos são as pessoas que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
 
+### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
+
+```{r}
+# ToDo: gráfico lucas
+```
+
+Analisando o gráfico acima, podemos perceber que quanto mais tempo um aluno passa nas redes sociais, maior é a tendência de ele acreditar que o uso das mídias sociais integradas ao ensino pode melhorar o resultado dos alunos.
+
 ## Conclusão
 Os professores estão começando a utilizar as redes sociais para auxiliar no ensino e os alunos acham que essa é uma forma muito boa. Melhora o aprendizado, é prático, fácil...
