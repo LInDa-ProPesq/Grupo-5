@@ -1,0 +1,37 @@
+---
+title: "Relatório"
+output: html_document
+---
+
+````{r echo=FALSE, message=FALSE}
+if (!require(readxl)) install.packages('readxl')
+library(readxl)
+
+df <- read_excel("../dados/umses_alunos_2018.xlsx")
+```
+
+## Introdução
+
+Com o surgimento da Internet na década de 90, a comunicação e troca de informações entre pessoas remotas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse ocupada por Redes Sociais. Essas redes se tornaram popular principalmente entre os jovens.
+Atualmente o uso de redes sociais é algo comum na sociedade e existem diversos tipos, dentre as mais famosa, podemos citar: Facebook, YouTube, Twitter, WhatsApp.
+
+Com base numa análise feita através de um questionário entregue respondido por discentes, neste relatório buscamos responder a seguinte pergunta:
+
+**Quais são as influências das mídias sociais sobre discentes da instituição de nível superior UNESP-Bauru-SP?**
+
+## Análises
+
+### Jovens passam mais tempo nas redes sociais?
+
+[[GRÁFICO IDADE X QUANTIDADE DE HORAS]]
+
+Analisando o gráfico acima, podemos perceber que a utilização das redes sociais continua predominantemente entre a população jovem, sendo que 90% da amostra, composta por jovens de x a y anos, gasta mais horas navegando nas redes sociais.
+
+### O que fazem nas mídias sociais quem julga que os alunos alcaçarão melhores resultados se elas estiverem integradas às aulas e/ou atividades?
+
+[[GRAFICO LUCAS]]
+
+Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais para compartilhamento de fotos e vídeos são as pessoas que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
+
+## Conclusão
+Os professores estão começando a utilizar as redes sociais para auxiliar no ensino e os alunos acham que essa é uma forma muito boa. Melhora o aprendizado, é prático, fácil...
