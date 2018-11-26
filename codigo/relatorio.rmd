@@ -41,7 +41,7 @@ md6 <- mean(idade6$tempogasto)
 idtemp <- data.frame(idade = c("Entre 16 e 20 anos" , "Entre 21 e 25 anos", "Entre 26 e 30 anos", "Entre 30 e 35 anos", "Entre 36 e 40 anos", "Acima de 40 anos"),
                      tempo = c(md1, md2, md3, md4, md5, md6))
 
-barplot(idtemp$tempo, names.arg= idtemp$idade, main = "Tempo médio gasto em sites de redes sociais por idade" )
+barplot(idtemp$tempo, names.arg= idtemp$idade, main = "Tempo médio gasto em sites de redes sociais por idade", col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1"))
 ```
 
 Analisando o gráfico acima, podemos perceber que a utilização das redes sociais continua predominantemente entre a população jovem, sendo que na amostra, os jovens de 20 a 25 anos são os que mais gastam horas navegando nas redes sociais.
@@ -55,7 +55,7 @@ uacad=table(df$usoacademico)
 lblua <- c("Não", "Sim", "Sim, porém com restrições", "Não sei/Não tenho opinião")
 pctua <- round(uacad/sum(uacad)*100, digits=1)
 lblua <- paste0(pctua, "%", lblua)
-pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
+pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "green3", "chocolate1"), border = NULL,
     lty = NULL, main = "Midia social deve ser utilizada pelos professores")
 ```
 
@@ -104,7 +104,7 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
      "Para compartilhar fotos ou vídeos com outras pessoas",
      "Conhecer novas pessoas",
      "Compartilhar detalhes e assuntos de trabalho")
-pie(x, labels = n)
+pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"))
 ```
 
 Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais para compartilhamento de fotos e vídeos são as pessoas que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
