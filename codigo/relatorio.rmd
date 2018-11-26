@@ -8,6 +8,8 @@ if (!require(readxl)) install.packages('readxl')
 library(readxl)
 
 df <- read_excel("../dados/umses_alunos_2018.xlsx")
+pd <- read_excel("../dados/principais_dificuldades.xlsx")
+sm <- read_excel("../dados/redessociais.xlsx")
 ```
 
 ## Introdução
@@ -113,7 +115,7 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
      "Para compartilhar opiniões",
      "Para compartilhar fotos ou vídeos com outras pessoas",
      "Porque os amigos já estão neles",
-     "Realizar networking profissional com outras pessoas"
+     "Realizar networking profissional com outras pessoas",
      "Conhecer novas pessoas",
      "Compartilhar detalhes e assuntos de trabalho")
 pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
@@ -126,13 +128,15 @@ Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais 
 Por mais que as redes sociais possam parecer atraentes e tenham uma grande adesão, é importante levar em consideração as dificuldades que elas apresentam em relação ao aprendizado. O maior desafio é é transformar a presença dos aparelhos tecnológicos em aproveitamento real.
 Quando questionados sobre as principais dificuldades do uso das mídias sociais em um ambiente educacional, a maior escolha por parte de nossa amostra foi disparada a opção distração, como é possível ver no gráfico 5.
 
-## [GRÁFICO QUESTÃO 7 - QUANTIDADE X DIFICULDADES]
+```{r echo=FALSE, fig.width=11}
+barplot(pd$X__1, main = "Principais dificuldades de uso de Mídias Sociais em um ambiente educacional", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70), col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1"))
+```
 
 Com os discentes constantemente conectados e a grande quantidade de opções de entretenimento disponíveis, é fácil acabar se distraindo, e esse é um problema para todas as gerações. Em uma tentativa de resolver o problema, a Lei Distrital nº 4.131/2008 proíbe a utilização de aparelhos celulares na sala de aula dos colégios no Distrito Federal. (MEIRA, S. 2016)
 
 Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se ferramentas de interação como as redes sociais. Para isso é necessário que o professor tenha conhecimento de tais ferramentas. Não é raro encontrar casos onde instituições introduzem a tecnologia como medida de marketing, tentando passar uma imagem de modernidade.
 
-# Caso as redes sociais se torne realmente um ferramenta de apoio para os professores, por onde eles devem começar
+# Caso as redes sociais se tornem realmente uma ferramenta de apoio para os professores, por onde eles devem começar
 
 ### Por onde começar?
 
@@ -140,7 +144,9 @@ As redes sociais são ambientes virtuais informais, sendo grande parte delas de 
 
 Abaixo podemos ver as redes sociais mais utilizadas pela amostra, onde aqueles professores interessados em utilizar uma rede social como ferramenta poderiam tentar inciar.
 
-## [GRÁFICO QUANTIDADE X REDES SOCIAIS MAIS UTILIZADAS]
+```{r echo=FALSE, fig.width=11}
+barplot(sm$Usuarios, main = "Numero de usuários por Rede Social", names.arg = sm$`Rede Social`, ylim = c(0, 70), col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"))
+```
 
 ### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
 
