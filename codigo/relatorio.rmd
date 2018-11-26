@@ -37,10 +37,10 @@ md4 <- mean(idade4$tempogasto)
 md5 <- mean(idade5$tempogasto)
 md6 <- mean(idade6$tempogasto)
 
-idtemp <- data.frame(idade = c("Entre 16 e 20 anos" , "Entre 21 e 25 anos", "Entre 26 e 30 anos", "Entre 30 e 35 anos", "Entre 36 e 40 anos", "Acima de 40 anos"),
-                     tempo = c(md1, md2, md3, md4, md5, md6))
-
-barplot(idtemp$tempo, names.arg= idtemp$idade, main = "Tempo médio gasto em sites de redes sociais por idade", col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1"))
+barplot(c(md1, md2, md3, md4, md5, md6),
+        names.arg = c("Entre 16 e 20 anos" , "Entre 21 e 25 anos", "Entre 26 e 30 anos", "Entre 30 e 35 anos", "Entre 36 e 40 anos", "Acima de 40 anos"),
+        main = "Tempo médio gasto em sites de redes sociais por idade",
+        col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1"))
 ```
 
 Analisando o gráfico acima, podemos perceber que a utilização das redes sociais continua predominantemente entre a população jovem, sendo que na amostra, os jovens de 20 a 25 anos são os que mais gastam horas navegando nas redes sociais.
