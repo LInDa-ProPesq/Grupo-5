@@ -19,7 +19,7 @@ Com base numa análise feita através de um questionário entregue respondido po
 
 **Quais são as influências das mídias sociais sobre discentes da instituição de nível superior UNESP-Bauru-SP?**
 
-## **Análises**
+## Análises
 
 ### Jovens passam mais tempo nas redes sociais?
 ```{r echo=FALSE, fig.width=11}
