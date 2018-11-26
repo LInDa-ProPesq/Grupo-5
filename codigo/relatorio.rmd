@@ -22,7 +22,7 @@ Com base numa análise feita através de um questionário entregue respondido po
 ## Análises
 
 ### Jovens passam mais tempo nas redes sociais?
-```{r echo=FALSE}
+```{r echo=FALSE, fig.width=9}
 idade1 <- subset(df, idade == 1)
 idade2 <- subset(df, idade == 2)
 idade3 <- subset(df, idade == 3)
@@ -39,7 +39,7 @@ md6 <- mean(idade6$tempogasto)
 
 barplot(c(md1, md2, md3, md4, md5, md6),
         names.arg = c("Entre 16 e 20 anos" , "Entre 21 e 25 anos", "Entre 26 e 30 anos", "Entre 30 e 35 anos", "Entre 36 e 40 anos", "Acima de 40 anos"),
-        main = "Tempo médio gasto em sites de redes sociais por idade",
+        main = "Tempo médio gasto em sites de Redes Sociais por idade",
         col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1"))
 ```
 
@@ -51,22 +51,22 @@ Assim como a sociedade, as metodologias de ensino buscam se aperfeiçoar e adapt
 
 Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru, foi questionado se a mídia social é a melhor forma de aproximação entre professor e aluno e se deveria ou poderia ser utilizada pelos professores. Com base nos resultados apresentados nos gráficos abaixo, podemos afirmar que os discentes têm grande adesão quanto ao uso de mídias para essa utilização.
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.width=9}
 uacad=table(df$usoacademico)
 lblua <- c("Não", "Sim", "Sim, porém com restrições", "Não sei/Não tenho opinião")
 pctua <- round(uacad/sum(uacad)*100, digits=1)
 lblua <- paste0(pctua, "%", lblua)
 pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "green3", "chocolate1"), border = NULL,
-    lty = NULL, main = "Midia social deve ser utilizada pelos professores")
+    lty = NULL, main = "Mídia Social deve ser utilizada pelos professores")
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.width=9}
 aprox=table(df$profchegaal)
 lblap <- c("Não", "Sim", "Não sei/Não tenho opinião")
 pctap <- round(aprox/sum(aprox)*100, digits=1)
 lblap <- paste0(pctap, "%", lblap)
 pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
-    lty = NULL, main = "Midia social é a melhor forma de aproximação Professor/Aluno")
+    lty = NULL, main = "Mídia Social é a melhor forma de aproximação Professor/Aluno")
 ```
 
 Com a facilidade do compartilhamento de dados e comunicação fornecida, a utilização dessas redes trariam muitos benefícios. Segundo Carvalho Jr., dentro das possibilidades de redes sociais como o Facebook, por exemplo, o professor pode:
@@ -81,7 +81,7 @@ Com a facilidade do compartilhamento de dados e comunicação fornecida, a utili
 
 Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O gráfico 6 ilustra os dados.
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.width=12, fig.height=6}
 contato <- df[df$contato == 1,]
 atualizado <- df[df$atualizado == 1,]
 preencher <- df[df$preencher == 1,]
@@ -105,7 +105,7 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
      "Para compartilhar fotos ou vídeos com outras pessoas",
      "Conhecer novas pessoas",
      "Compartilhar detalhes e assuntos de trabalho")
-pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"))
+pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
 ```
 
 ### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
