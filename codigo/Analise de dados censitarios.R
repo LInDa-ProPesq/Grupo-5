@@ -104,10 +104,20 @@ dev.off()
 #===============================================
 
 #======= Trabalho de dados - Número de Usuarios por rede social ===========
-sm <- read_excel("dados/redessociais.xlsx")
-sm
+facebook <- as.vector(table(df$facebook))[1]
+twitter <- as.vector(table(df$twitter))[1]
+whatsapp <- as.vector(table(df$whatsapp))[1]
+linkedin <- as.vector(table(df$linkedin))[1]
+youtube <- as.vector(table(df$youtube))[1]
+instagram <- as.vector(table(df$instagram))[1]
+snapchat <- as.vector(table(df$snapchat))[1]
+tumblr <- as.vector(table(df$tumblr))[1]
+pinterest <- as.vector(table(df$pinterest))[1]
+outras_plataformas <- as.vector(table(df$outras_plataformas))[1]
 png(filename="graficos/aed_survey_redes_socias.png", width = 1920, height = 1080, pointsize = 16)
-barplot(sm$Usuarios, main = "Numero de usuários por rede Social", names.arg = sm$`Rede Social`, ylim = c(0, 70)) 
+barplot(c(facebook, twitter, whatsapp, linkedin, youtube, instagram, snapchat, tumblr, pinterest, outras_plataformas),
+        names.arg = c("Facebook", "Twitter", "Whatsapp", "LinkedIn", "Youtube", "Instagram", "Snapchat", "Tumblr", "Pinterest", "Outras Plataformas"),
+        main = "Numero de usuários por rede Social", ylim = c(0, 70))
 dev.off()
 #===============================================
 
