@@ -1,11 +1,14 @@
-idtempo <- read_excel("dados/idade-redesutil-tempo.xlsx")
-idtempo
-idade1 <- subset(idtempo, idade == 1) 
-idade2 <- subset(idtempo, idade == 2) 
-idade3 <- subset(idtempo, idade == 3)
-idade4 <- subset(idtempo, idade == 4) 
-idade6 <- subset(idtempo, idade == 5) 
-idade6 <- subset(idtempo, idade == 6) 
+if (!require(readxl)) install.packages('readxl')
+    library(readxl)
+
+df <- read_excel("dados/umses_alunos_2018.xlsx")
+
+idade1 <- subset(df, idade == 1)
+idade2 <- subset(df, idade == 2)
+idade3 <- subset(df, idade == 3)
+idade4 <- subset(df, idade == 4)
+idade6 <- subset(df, idade == 5)
+idade6 <- subset(df, idade == 6)
 
 md1 <- mean(idade1$tempogasto)
 md1
