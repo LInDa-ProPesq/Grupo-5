@@ -31,9 +31,23 @@ Assim como a sociedade, as metodologias de ensino buscam se aperfeiçoar e adapt
 
 Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru, foi questionado se a mídia social é a melhor forma de aproximação entre professor e aluno e se deveria ou poderia ser utilizada pelos professores. Com  base nos resultados apresentados nos gráficos abaixo, podemos afirmar que os discentes têm grande adesão quanto ao uso de mídias para essa utilização.
 
-## [GRÁFICO QUESTÃO 4 - QUANTIDADE X RESPOSTA]
+```{r echo=FALSE}
+uacad=table(df$usoacademico)
+lblua <- c("Não", "Sim", "Sim, porém com restrições", "Não sei/Não tenho opinião")
+pctua <- round(uacad/sum(uacad)*100, digits=1)
+lblua <- paste0(pctua, "%", lblua)
+pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
+    lty = NULL, main = "Midia social deve ser utilizada pelos professores")
+```
 
-## [GRÁFICO QUESTÃO 5 - QUANTIDADE X RESPOSTA]
+```{r echo=FALSE}
+aprox=table(df$profchegaal)
+lblap <- c("Não", "Sim", "Não sei/Não tenho opinião")
+pctap <- round(aprox/sum(aprox)*100, digits=1)
+lblap <- paste0(pctap, "%", lblap)
+pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
+    lty = NULL, main = "Midia social é a melhor forma de aproximação Professor/Aluno")
+```
 
 Com a facilidade do compartilhamento de dados e comunicação fornecida, a utilização dessas redes trariam muitos benefícios. Segundo Carvalho Jr., dentro das possibilidades de redes sociais como o Facebook, por exemplo, o professor pode:
 
