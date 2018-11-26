@@ -24,7 +24,7 @@ idtemp <- data.frame(idade = c("Entre 16 e 20 anos" , "Entre 21 e 25 anos", "Ent
                      tempo = c(md1, md2, md3, md4, md5, md6))
 idtemp
 
-png(filename="grafico/aed_survey_idade_tempo_gasto.png", width = 1920, height = 1080, pointsize = 16)
+png(filename="graficos/aed_survey_idade_tempo_gasto.png", width = 1920, height = 1080, pointsize = 16)
 barplot(idtemp$tempo, names.arg= idtemp$idade, main = "Tempo médio gasto em sites de redes sociais por idade" )
 
 dev.off()
