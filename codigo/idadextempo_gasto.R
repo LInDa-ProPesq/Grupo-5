@@ -1,4 +1,4 @@
-idtempo <- read_excel(file.choose())
+idtempo <- read_excel("dados/idade-redesutil-tempo.xlsx")
 idtempo
 idade1 <- subset(idtempo, idade == 1) 
 idade2 <- subset(idtempo, idade == 2) 
