@@ -55,7 +55,7 @@ Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru,
 uacad=table(df$usoacademico)
 lblua <- c("Não", "Sim", "Sim, porém com restrições", "Não sei/Não tenho opinião")
 pctua <- round(uacad/sum(uacad)*100, digits=1)
-lblua <- paste0(pctua, "%", lblua)
+lblua <- paste0(pctua, "% - ", lblua)
 pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "green3", "chocolate1"), border = NULL,
     lty = NULL, main = "Mídia Social deve ser utilizada pelos professores")
 ```
@@ -64,7 +64,7 @@ pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "gr
 aprox=table(df$profchegaal)
 lblap <- c("Não", "Sim", "Não sei/Não tenho opinião")
 pctap <- round(aprox/sum(aprox)*100, digits=1)
-lblap <- paste0(pctap, "%", lblap)
+lblap <- paste0(pctap, "% - ", lblap)
 pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
     lty = NULL, main = "Mídia Social é a melhor forma de aproximação Professor/Aluno")
 ```
@@ -80,6 +80,15 @@ Com a facilidade do compartilhamento de dados e comunicação fornecida, a utili
 
 
 Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O gráfico 6 ilustra os dados.
+
+```{r echo=FALSE, fig.width=9}
+mres=table(df$melhoraresul)
+lblmr <- c("Não", "Sim", "Não sei/Não tenho opinião")
+pctmr <- round(mres/sum(mres)*100, digits=1)
+lblmr <- paste0(pctmr, "% - ", lblmr)
+pie(mres, labels = lblmr, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
+    lty = NULL, main = "Mídia Social pode melhorar os resultados dos alunos")
+```
 
 ```{r echo=FALSE, fig.width=12, fig.height=6}
 contato <- df[df$contato == 1,]
@@ -109,6 +118,8 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
      "Compartilhar detalhes e assuntos de trabalho")
 pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
 ```
+
+Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais para compartilhamento de fotos e vídeos são as pessoas que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
 
 ### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
 
