@@ -103,6 +103,8 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
      "Para encontrar conteúdo interessante e/ou divertido",
      "Para compartilhar opiniões",
      "Para compartilhar fotos ou vídeos com outras pessoas",
+     "Porque os amigos já estão neles",
+     "Realizar networking profissional com outras pessoas"
      "Conhecer novas pessoas",
      "Compartilhar detalhes e assuntos de trabalho")
 pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
