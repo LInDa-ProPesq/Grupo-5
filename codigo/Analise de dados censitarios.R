@@ -123,9 +123,9 @@ dev.off()
 
 #====== Trabalho de dados - Motivos de uso =========
 mu <- read_excel("dados/motivos_uso.xlsx")
-mu 
+mu
 png(filename="graficos/aed_survey_motivos_uso.png", width = 1920, height = 1080, pointsize = 16)
-barplot(mu$X__1, main = "Principais usos das redes sociais", names.arg = mu$Motivos, ylim = c(0, 70)) 
+barplot(mu$X__1, main = "Principais usos das redes sociais", names.arg = mu$Motivos, ylim = c(0, 70))
 dev.off()
 #===================================================
 
@@ -187,9 +187,9 @@ dev.off()
 
 #====== Trabalho de dados - Principais dificuldades =========
 pd <- read_excel("dados/principais_dificuldades.xlsx")
-pd 
+pd
 png(filename="graficos/aed_survey_principais_dificuldades.png", width = 1920, height = 1080, pointsize = 16)
-barplot(pd$X__1, main = "Principais dificuldades", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70)) 
+barplot(pd$X__1, main = "Principais dificuldades", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70))
 dev.off()
 #===================================================
 
