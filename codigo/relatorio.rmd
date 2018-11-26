@@ -22,7 +22,7 @@ Com base numa análise feita através de um questionário entregue respondido po
 ## Análises
 
 ### Jovens passam mais tempo nas redes sociais?
-```{r echo=FALSE, fig.width=9}
+```{r echo=FALSE, fig.width=11}
 idade1 <- subset(df, idade == 1)
 idade2 <- subset(df, idade == 2)
 idade3 <- subset(df, idade == 3)
@@ -40,7 +40,7 @@ md6 <- mean(idade6$tempogasto)
 barplot(c(md1, md2, md3, md4, md5, md6),
         names.arg = c("Entre 16 e 20 anos" , "Entre 21 e 25 anos", "Entre 26 e 30 anos", "Entre 30 e 35 anos", "Entre 36 e 40 anos", "Acima de 40 anos"),
         main = "Tempo médio gasto em sites de Redes Sociais por idade",
-        col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1"))
+        col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "blue","purple", "green3"))
 ```
 
 Analisando o gráfico acima, podemos perceber que a utilização das redes sociais continua predominantemente entre a população jovem, sendo que na amostra, os jovens de 20 a 25 anos são os que mais gastam horas navegando nas redes sociais.
