@@ -22,7 +22,6 @@ Com base numa análise feita através de um questionário entregue respondido po
 ## Análises
 
 ### Jovens passam mais tempo nas redes sociais?
-
 ```{r echo=FALSE}
 idade1 <- subset(df, idade == 1)
 idade2 <- subset(df, idade == 2)
@@ -82,8 +81,6 @@ Com a facilidade do compartilhamento de dados e comunicação fornecida, a utili
 
 Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O gráfico 6 ilustra os dados.
 
-## [GRÁFICO QUESTÃO 6 - QUANTIDADE X RESPOSTA]
-
 ```{r echo=FALSE}
 contato <- df[df$contato == 1,]
 atualizado <- df[df$atualizado == 1,]
@@ -111,15 +108,11 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
 pie(x, labels = n)
 ```
 
-Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais para compartilhamento de fotos e vídeos são as pessoas que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
-
 ### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
 
 ```{r}
 # ToDo: gráfico lucas
 ```
-
-Analisando o gráfico acima, podemos perceber que quanto mais tempo um aluno passa nas redes sociais, maior é a tendência de ele acreditar que o uso das mídias sociais integradas ao ensino pode melhorar o resultado dos alunos.
 
 ## Conclusão
 Os professores estão começando a utilizar as redes sociais para auxiliar no ensino e os alunos acham que essa é uma forma muito boa. Melhora o aprendizado, é prático, fácil...
