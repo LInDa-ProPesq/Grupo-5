@@ -19,9 +19,9 @@ Com base numa análise feita através de um questionário entregue respondido po
 
 **Quais são as influências das mídias sociais sobre discentes da instituição de nível superior UNESP-Bauru-SP?**
 
-## Análises
+## **Análises**
 
-### Jovens passam mais tempo nas redes sociais?
+###**Jovens passam mais tempo nas redes sociais?**
 
 ## [GRÁFICO IDADE X QUANTIDADE DE HORAS]
 
@@ -50,7 +50,7 @@ Analisando o gráfico acima, podemos perceber que a utilização das redes socia
 
 Assim como a sociedade, as metodologias de ensino buscam se aperfeiçoar e adaptar-se com o passar do tempo e levando em consideração o grande uso das redes sociais pelos alunos, seria uma estratégia interessante por parte dos professores, utiliza-las como ferramenta de ensino.
 
-###O uso das redes sociais como ferramenta de ensino.
+###**O uso das redes sociais como ferramenta de ensino.**
 
 Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru, foi questionado se a mídia social é a melhor forma de aproximação entre professor e aluno e se deveria ou poderia ser utilizada pelos professores. Com base nos resultados apresentados nos gráficos abaixo, podemos afirmar que os discentes têm grande adesão quanto ao uso de mídias para essa utilização.
 
@@ -74,15 +74,15 @@ pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "gr
 
 Com a facilidade do compartilhamento de dados e comunicação fornecida, a utilização dessas redes trariam muitos benefícios. Segundo Carvalho Jr., dentro das possibilidades de redes sociais como o Facebook, por exemplo, o professor pode:
 
-- Postar fotos, textos e reportagens de determinado tema desenvolvido em aula, como a realidade profissional de algumas modalidades esportivas visando sempre ao debate e aprofundamento do estudo;
+"- Postar fotos, textos e reportagens de determinado tema desenvolvido em aula, como a realidade profissional de algumas modalidades esportivas visando sempre ao debate e aprofundamento do estudo;
 - Convidar pessoas (alunos, professores, profissionais renomados) de fora da instituição para participar do debate e estudo, promovendo intercâmbio entre os estudantes e enriquecendo a aprendizagem;
 - Utilizar o perfil de cada aluno para conhecer sua realidade, sua história de vida, o que daria ao professor subsídios para promover uma aprendizagem significativa;
 - Organizar os fóruns (tópicos) do grupo criado, facilitando a interação, promovendo debates e discussões que enriquecem a formação do aluno e desenvolvendo todas as dimensões do conteúdo/conhecimento com os alunos;
 - Eleger alunos representantes de turma que poderiam ser moderadores do grupo, ajudando na eliminação de dúvidas, aprofundamento do estudo, debates, reflexões etc.;
-- Divulgar eventos esportivos e culturais, dicas e orientações de estudo, de atividades físicas e de atividades de lazer.
+- Divulgar eventos esportivos e culturais, dicas e orientações de estudo, de atividades físicas e de atividades de lazer."
+(CARVALHO JR, A. 2014)
 
-
-Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O gráfico 6 ilustra os dados.
+Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O gráfico 4 ilustra os dados.
 
 ```{r echo=FALSE}
 contato <- df[df$contato == 1,]
@@ -111,19 +111,42 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
 pie(x, labels = n)
 ```
 
+###**O revés das redes sociais como ferramenta.**
+
+Por mais que as redes sociais possam parecer atraentes e tenham uma grande adesão, é importante levar em consideração as dificuldades que elas apresentam em relação ao aprendizado. O maior desafio é é transformar a presença dos aparelhos tecnológicos em aproveitamento real.
+Quando questionados sobre as principais dificuldades do uso das mídias sociais em um ambiente educacional, a maior escolha por parte de nossa amostra foi disparada a opção distração, como é possível ver no gráfico 5.
+
+## [GRÁFICO QUESTÃO 7 - QUANTIDADE X DIFICULDADES]
+
+Com os discentes constantemente conectados e a grande quantidade de opções de entretenimento disponíveis, é fácil acabar se distraindo, e esse é um problema para todas as gerações. Em uma tentativa de resolver o problema, a Lei Distrital nº 4.131/2008 proíbe a utilização de aparelhos celulares na sala de aula dos colégios no Distrito Federal. (MEIRA, S. 2016)
+
+Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se ferramentas de interação como as redes sociais. Para isso é necessário que o professor tenha conhecimento de tais ferramentas. Não é raro encontrar casos onde instituições introduzem a tecnologia como medida de marketing, tentando passar uma imagem de modernidade.
+
+#Caso as redes sociais se torne realmente um ferramenta de apoio para os professores, por onde eles devem começar
+
+###**Por onde começar?**
+
+As redes sociais são ambientes virtuais informais, sendo grande parte delas de acesso irrestrito. Muitas instituições de ensino, principalmente na modalidade Educação a Distância (EaD), oferecem suas próprias redes, plataformas virtuais abertas para seus alunos e professores com grupos de discussões, chats e troca de arquivos. (CARVALHO JR, A. 2014)
+
+Abaixo podemos ver as redes sociais mais utilizadas pela amostra, onde aqueles professores interessados em utilizar uma rede social como ferramenta poderiam tentar inciar. 
+
+## [GRÁFICO QUANTIDADE X REDES SOCIAIS MAIS UTILIZADAS]
+
+
 ### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
 
 ```{r}
 # ToDo: gráfico lucas
 ```
 
-## Conclusão
+###**Conclusão**
 Os professores estão começando a utilizar as redes sociais para auxiliar no ensino e os alunos acham que essa é uma forma muito boa. Melhora o aprendizado, é prático, fácil...
+Mas uma rede social não substitui um professor de verdade, o qual possui didática, estudou para se dedicar à profissão de ensino.
 
 Referências Bibliográficas
 
-http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino
+CARVALHO JR., Arlindo. **As redes sociais como ferramentas didáticas virtuais de interação e ensino**. Disponível em: <http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino>. Acesso em: 26 de nov. de 2018
 
-Bibliografia
+MEIRA, Samara. **REDES SOCIAIS COMO FERRAMENTA DE ENSINO DOS FENÔMENOS ÓPTICOS**. Disponível em: <http://mnpef.fis.unb.br/download/dissertacao_samara.pdf>. Acesso em: 26 de nov. de 2018
 
 
