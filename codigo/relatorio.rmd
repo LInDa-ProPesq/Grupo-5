@@ -9,7 +9,6 @@ library(readxl)
 
 df <- read_excel("../dados/umses_alunos_2018.xlsx")
 pd <- read_excel("../dados/principais_dificuldades.xlsx")
-sm <- read_excel("../dados/redessociais.xlsx")
 ```
 
 ## Introdução
@@ -145,7 +144,19 @@ As redes sociais são ambientes virtuais informais, sendo grande parte delas de 
 Abaixo podemos ver as redes sociais mais utilizadas pela amostra, onde aqueles professores interessados em utilizar uma rede social como ferramenta poderiam tentar inciar.
 
 ```{r echo=FALSE, fig.width=11}
-barplot(sm$Usuarios, main = "Numero de usuários por Rede Social", names.arg = sm$`Rede Social`, ylim = c(0, 70), col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"))
+facebook <- as.vector(table(df$facebook))[1]
+twitter <- as.vector(table(df$twitter))[1]
+whatsapp <- as.vector(table(df$whatsapp))[1]
+linkedin <- as.vector(table(df$linkedin))[1]
+youtube <- as.vector(table(df$youtube))[1]
+instagram <- as.vector(table(df$instagram))[1]
+snapchat <- as.vector(table(df$snapchat))[1]
+tumblr <- as.vector(table(df$tumblr))[1]
+pinterest <- as.vector(table(df$pinterest))[1]
+outras_plataformas <- as.vector(table(df$outras_plataformas))[1]
+barplot(c(facebook, twitter, whatsapp, linkedin, youtube, instagram, snapchat, tumblr, pinterest, outras_plataformas),
+        names.arg = c("Facebook", "Twitter", "Whatsapp", "LinkedIn", "Youtube", "Instagram", "Snapchat", "Tumblr", "Pinterest", "Outras Plataformas"),
+        main = "Numero de usuários por rede Social", ylim = c(0, 70), col = c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"))
 ```
 
 ### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
