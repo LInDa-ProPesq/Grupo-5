@@ -23,13 +23,15 @@ Com base numa análise feita através de um questionário entregue respondido po
 
 ### Jovens passam mais tempo nas redes sociais?
 
-[[GRÁFICO IDADE X QUANTIDADE DE HORAS]]
+## [GRÁFICO IDADE X QUANTIDADE DE HORAS]
 
 Analisando o gráfico acima, podemos perceber que a utilização das redes sociais continua predominantemente entre a população jovem, sendo que na amostra, os jovens de 20 a 25 anos são os que mais gastam horas navegando nas redes sociais.
 
 Assim como a sociedade, as metodologias de ensino buscam se aperfeiçoar e adaptar-se com o passar do tempo e levando em consideração o grande uso das redes sociais pelos alunos, seria uma estratégia interessante por parte dos professores, utiliza-las como ferramenta de ensino.
 
-Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru, foi questionado se a mídia social é a melhor forma de aproximação entre professor e aluno e se deveria ou poderia ser utilizada pelos professores. Com  base nos resultados apresentados nos gráficos abaixo, podemos afirmar que os discentes têm grande adesão quanto ao uso de mídias para essa utilização.
+###O uso das redes sociais como ferramenta de ensino.
+
+Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru, foi questionado se a mídia social é a melhor forma de aproximação entre professor e aluno e se deveria ou poderia ser utilizada pelos professores. Com base nos resultados apresentados nos gráficos abaixo, podemos afirmar que os discentes têm grande adesão quanto ao uso de mídias para essa utilização.
 
 ## [GRÁFICO QUESTÃO 4 - QUANTIDADE X RESPOSTA]
 
@@ -45,7 +47,9 @@ Com a facilidade do compartilhamento de dados e comunicação fornecida, a utili
 - Divulgar eventos esportivos e culturais, dicas e orientações de estudo, de atividades físicas e de atividades de lazer.
 
 
-### O que fazem nas mídias sociais quem julga que os alunos alcaçarão melhores resultados se elas estiverem integradas às aulas e/ou atividades?
+Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O gráfico 6 ilustra os dados.
+
+## [GRÁFICO QUESTÃO 6 - QUANTIDADE X RESPOSTA]
 
 ```{r echo=FALSE}
 contato <- df[df$contato == 1,]
@@ -86,3 +90,11 @@ Analisando o gráfico acima, podemos perceber que quanto mais tempo um aluno pas
 
 ## Conclusão
 Os professores estão começando a utilizar as redes sociais para auxiliar no ensino e os alunos acham que essa é uma forma muito boa. Melhora o aprendizado, é prático, fácil...
+
+Referências Bibliográficas
+
+http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino
+
+Bibliografia
+
+
