@@ -1,0 +1,64 @@
+Apresentação
+========================================================
+
+```{r include=FALSE}
+if (!require(readxl)) install.packages('readxl')
+library(readxl)
+
+df <- read_excel("../dados/umses_alunos_2018.xlsx")
+```
+
+Introdução
+========================================================
+
+Com o surgimento da Internet na década de 90, a comunicação e troca de informações entre pessoas remotas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse ocupada por Redes Sociais. Essas redes se tornaram popular principalmente entre os jovens.
+Atualmente o uso de redes sociais é algo comum na sociedade e existem diversos tipos, dentre as mais famosa, podemos citar: Facebook, YouTube, Twitter, WhatsApp.
+
+Com base numa análise feita através de um questionário entregue respondido por discentes, neste relatório buscamos responder a seguinte pergunta:
+
+**Quais são as influências das mídias sociais sobre discentes da instituição de nível superior UNESP-Bauru-SP?**
+
+Jovens passam mais tempo nas redes sociais?
+========================================================
+
+```{r echo=FALSE, fig.width=11}
+idade1 <- subset(df, idade == 1)
+idade2 <- subset(df, idade == 2)
+idade3 <- subset(df, idade == 3)
+idade4 <- subset(df, idade == 4)
+idade5 <- subset(df, idade == 5)
+idade6 <- subset(df, idade == 6)
+
+md1 <- mean(idade1$tempogasto)
+md2 <- mean(idade2$tempogasto)
+md3 <- mean(idade3$tempogasto)
+md4 <- mean(idade4$tempogasto)
+md5 <- mean(idade5$tempogasto)
+md6 <- mean(idade6$tempogasto)
+
+barplot(c(md1, md2, md3, md4, md5, md6),
+        names.arg = c("Entre 16 e 20 anos" , "Entre 21 e 25 anos", "Entre 26 e 30 anos", "Entre 30 e 35 anos", "Entre 36 e 40 anos", "Acima de 40 anos"),
+        main = "Tempo médio gasto em sites de Redes Sociais por idade",
+        col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "blue","purple", "green3"))
+```
+
+O uso das redes sociais como ferramenta de ensino
+========================================================
+
+```{r echo=FALSE, fig.width=9}
+uacad=table(df$usoacademico)
+lblua <- c("Não", "Sim", "Sim, porém com restrições", "Não sei/Não tenho opinião")
+pctua <- round(uacad/sum(uacad)*100, digits=1)
+lblua <- paste0(pctua, "%", lblua)
+pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "green3", "chocolate1"), border = NULL,
+    lty = NULL, main = "Mídia Social deve ser utilizada pelos professores")
+```
+***
+```{r echo=FALSE, fig.width=9}
+aprox=table(df$profchegaal)
+lblap <- c("Não", "Sim", "Não sei/Não tenho opinião")
+pctap <- round(aprox/sum(aprox)*100, digits=1)
+lblap <- paste0(pctap, "%", lblap)
+pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
+    lty = NULL, main = "Mídia Social é a melhor forma de aproximação Professor/Aluno")
+```
