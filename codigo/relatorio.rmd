@@ -77,15 +77,15 @@ pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "gr
 
 Com a facilidade do compartilhamento de dados e comunicação fornecida, a utilização das Redes Sociais traria muitos benefícios. Segundo Carvalho Jr., dentro das possibilidades de redes sociais como o Facebook, por exemplo, o professor pode:
 
-"- Postar fotos, textos e reportagens de determinado tema desenvolvido em aula, como a realidade profissional de algumas modalidades esportivas visando sempre ao debate e aprofundamento do estudo;
-- Convidar pessoas (alunos, professores, profissionais renomados) de fora da instituição para participar do debate e estudo, promovendo intercâmbio entre os estudantes e enriquecendo a aprendizagem;
-- Utilizar o perfil de cada aluno para conhecer sua realidade, sua história de vida, o que daria ao professor subsídios para promover uma aprendizagem significativa;
-- Organizar os fóruns (tópicos) do grupo criado, facilitando a interação, promovendo debates e discussões que enriquecem a formação do aluno e desenvolvendo todas as dimensões do conteúdo/conhecimento com os alunos;
-- Eleger alunos representantes de turma que poderiam ser moderadores do grupo, ajudando na eliminação de dúvidas, aprofundamento do estudo, debates, reflexões etc.;
+"- Postar fotos, textos e reportagens de determinado tema desenvolvido em aula, como a realidade profissional de algumas modalidades esportivas visando sempre ao debate e aprofundamento do estudo;  
+- Convidar pessoas (alunos, professores, profissionais renomados) de fora da instituição para participar do debate e estudo, promovendo intercâmbio entre os estudantes e enriquecendo a aprendizagem;  
+- Utilizar o perfil de cada aluno para conhecer sua realidade, sua história de vida, o que daria ao professor subsídios para promover uma aprendizagem significativa;  
+- Organizar os fóruns (tópicos) do grupo criado, facilitando a interação, promovendo debates e discussões que enriquecem a formação do aluno e desenvolvendo todas as dimensões do conteúdo/conhecimento com os alunos;  
+- Eleger alunos representantes de turma que poderiam ser moderadores do grupo, ajudando na eliminação de dúvidas, aprofundamento do estudo, debates, reflexões etc.;  
 - Divulgar eventos esportivos e culturais, dicas e orientações de estudo, de atividades físicas e de atividades de lazer."
 (CARVALHO JR, A. 2014)
 
-Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto, o que da embasamento para que professores possam testar em sala de aula a utilização das redes sociais. Levando em conta que haverá aceitação da utilização da rede social em sala de aula. O próximo gráfico ilustra os dados.
+Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto, o que dá embasamento para que professores possam testar em sala de aula a utilização das redes sociais. Levando em conta que haverá aceitação da utilização da rede social em sala de aula. O próximo gráfico ilustra os dados.
 
 ```{r echo=FALSE, fig.width=9}
 mres=table(df$melhoraresul)
@@ -125,7 +125,7 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
 pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
 ```
 
-Analisando o gráfico acima, podemos perceber que as pessoas que utilizam as redes sociais para compartilhamento de fotos e vídeos são as que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos. Devemos levar em consideração também que os alunos já utilizam as redes sociais com a finalidade de auxiliar a comunicação fora da sala de aula entre eles, como por exemplo trocando arquivos, vendo video aulas e marcando grupo de estudos, entre outros.
+Analisando o gráfico acima, podemos perceber que as pessoas que utilizam as redes sociais para compartilhamento de fotos e vídeos são as que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos. Devemos levar em consideração também que os alunos já utilizam as redes sociais com a finalidade de auxiliar a comunicação fora da sala de aula entre eles, como por exemplo trocando arquivos, assistindo a vídeo aulas e marcando grupo de estudos, entre outros.
 
 ### O revés das redes sociais como ferramenta.
 
@@ -208,8 +208,8 @@ barplot(x,
 ```
 
 ### Conclusão
-Dado o que foi apresententado neste relatório podemos concluir que, muitas instituições estão começando a utilizar as redes sociais para auxiliar no ensino e tentar uma melhora no rendimento dos alunos. Segundo o que foi exposto neste relatório alunos acham que esta é uma técnica interessante e que pode sim melhorar o aproveitamento deles em sala de aula, como a melhora do aprendizado, praticidade, fácilidade no acesso às informações, entre outras características.  
-Ainda assim, professores tem certo preconceito com a utilização das redes sociais como ferramentas de auxilio, pois ainda é muito complicado de controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores. Além disso, é sempre bom lembrar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem um professor de verdade, e sem o auxílio do mesmo, qualquer técnica de introdução destas ferramentas no processo de ensino se torna inútil.
+Dado o que foi apresentado neste relatório podemos concluir que, muitas instituições estão começando a utilizar as redes sociais para auxiliar no ensino e tentar uma melhora no rendimento dos alunos. Segundo o que foi exposto neste relatório alunos acham que esta é uma técnica interessante e que pode sim melhorar o aproveitamento deles em sala de aula, como a melhora do aprendizado, praticidade, facilidade no acesso às informações, entre outras características.  
+Ainda assim, professores têm certo preconceito com a utilização das redes sociais como ferramentas de auxílio, pois ainda é muito complicado de controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores. Além disso, é sempre bom lembrar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem um professor de verdade, e sem o auxílio do mesmo, qualquer técnica de introdução destas ferramentas no processo de ensino se torna inútil.
 
 ### Referências Bibliográficas
 
