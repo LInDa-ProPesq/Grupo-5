@@ -8,7 +8,6 @@ if (!require(readxl)) install.packages('readxl')
 library(readxl)
 
 df <- read_excel("../dados/umses_alunos_2018.xlsx")
-pd <- read_excel("../dados/principais_dificuldades.xlsx")
 ```
 
 ## Introdução
@@ -128,7 +127,16 @@ Por mais que as redes sociais possam parecer atraentes e tenham uma grande ades�
 Quando questionados sobre as principais dificuldades do uso das mídias sociais em um ambiente educacional, a maior escolha por parte de nossa amostra foi em sua grande maioria a opção "distração"", como é possível ver no próximo gráfico.
 
 ```{r echo=FALSE, fig.width=11}
-barplot(pd$X__1, main = "Principais dificuldades de uso de Mídias Sociais em um ambiente educacional", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70), col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1"))
+distracao <- as.vector(table(df$distracao))[1]
+usoindev <- as.vector(table(df$usoindev))[1]
+prejintera <- as.vector(table(df$prejintera))[1]
+bulling <- as.vector(table(df$bulling))[1]
+continadeq <- as.vector(table(df$continadeq))[1]
+outras_dificuldades <- as.vector(table(df$outras_dificuldades))[1]
+barplot(c(distracao, usoindev, prejintera, bulling, continadeq, outras_dificuldades),
+        names.arg = c("Distração", "Uso indevido", "Prejudicial", "Cyberbullying", "Conteúdo inadequado", "Outras"),
+        main = "Principais dificuldades de uso de Mídias Sociais em um ambiente educacional", ylim = c(0, 70),
+        col = c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1"))
 ```
 
 Com os discentes constantemente conectados e a grande quantidade de opções de entretenimento disponíveis, é fácil acabar se distraindo, e esse é um problema para todas as gerações. Em uma tentativa de resolver o problema, a Lei Distrital nº 4.131/2008 proíbe a utilização de aparelhos celulares na sala de aula dos colégios no Distrito Federal. (MEIRA, S. 2016)

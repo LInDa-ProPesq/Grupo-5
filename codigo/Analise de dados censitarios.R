@@ -197,10 +197,16 @@ dev.off()
 #===================================================
 
 #====== Trabalho de dados - Principais dificuldades =========
-pd <- read_excel("dados/principais_dificuldades.xlsx")
-pd
+distracao <- as.vector(table(df$distracao))[1]
+usoindev <- as.vector(table(df$usoindev))[1]
+prejintera <- as.vector(table(df$prejintera))[1]
+bulling <- as.vector(table(df$bulling))[1]
+continadeq <- as.vector(table(df$continadeq))[1]
+outras_dificuldades <- as.vector(table(df$outras_dificuldades))[1]
 png(filename="graficos/aed_survey_principais_dificuldades.png", width = 1920, height = 1080, pointsize = 16)
-barplot(pd$X__1, main = "Principais dificuldades", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70))
+barplot(c(distracao, usoindev, prejintera, bulling, continadeq, outras_dificuldades),
+        names.arg = c("Distração", "Uso indevido", "Prejudicial", "Cyberbullying", "Conteúdo inadequado", "Outras"),
+        main = "Principais dificuldades", ylim = c(0, 70))
 dev.off()
 #===================================================
 
