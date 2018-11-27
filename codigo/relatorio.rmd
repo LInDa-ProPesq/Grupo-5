@@ -169,8 +169,36 @@ barplot(c(facebook, twitter, whatsapp, linkedin, youtube, instagram, snapchat, t
 
 ### O tempo gasto em uso de mídias sociais influencia na crença de que o seu uso pode melhorar o resultado dos alunos?
 
-```{r}
-# ToDo: gráfico lucas
+Conforme apresentado no gráfico abaixo, pessoas que utilizam a rede social por mais tempo diariamente acreditam com maior frequência que o seu uso pode melhorar o resultado dos alunos.
+
+```{r echo=FALSE, fig.width=12, fig.height=6}
+naousa <- df[df$tempogasto == 1,]
+cinco_dez <- df[df$tempogasto == 2,]
+dez_trinta <- df[df$tempogasto == 3,]
+trinta_sessenta <- df[df$tempogasto == 4,]
+sessenta_120 <- df[df$tempogasto == 5,]
+centoevinte_180 <- df[df$tempogasto == 6,]
+centoeoitenta_240 <- df[df$tempogasto == 7,]
+duzentosequarenta_300 <- df[df$tempogasto == 8,]
+mais_300 <- df[df$tempogasto == 9,]
+x<-c(table(naousa$melhoraresul)['2'], table(cinco_dez$melhoraresul)['2'],
+     table(dez_trinta$melhoraresul)['2'], table(trinta_sessenta$melhoraresul)['2'],
+     table(sessenta_120$melhoraresul)['2'], table(centoevinte_180$melhoraresul)['2'],
+     table(centoeoitenta_240$melhoraresul)['2'], table(duzentosequarenta_300$melhoraresul)['2'],
+     table(mais_300$melhoraresul)['2'])
+n<-c("Não usa",
+     "5 - 10m",
+     "10 - 30m",
+     "30m - 1h",
+     "1 - 2h",
+     "2 - 3h",
+     "3 - 4h",
+     "4 - 5h",
+     "+5h")
+barplot(x,
+        names.arg = n,
+        main = "Tempo médio gasto em sites de Redes Sociais e melhora de resultado",
+        col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2"))
 ```
 
 ### Conclusão
