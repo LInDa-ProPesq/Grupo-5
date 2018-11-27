@@ -14,8 +14,8 @@ sm <- read_excel("../dados/redessociais.xlsx")
 
 ## Introdução
 
-Com o surgimento da Internet na década de 90, a comunicação e troca de informações entre pessoas remotas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse ocupada por Redes Sociais. Essas redes se tornaram popular principalmente entre os jovens.
-Atualmente o uso de redes sociais é algo comum na sociedade e existem diversos tipos, dentre as mais famosa, podemos citar: Facebook, YouTube, Twitter, WhatsApp.
+Com o surgimento da Internet na década de 90, a comunicação e troca de informações à distância entre pessoas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse complementada pelas Redes Sociais. Estas ferramentas tornaram-se populares principalmente entre os jovens, por razões como a novidade que as mesmas representam e a maior facilidade de interação entre pessoas de menor idade.
+Atualmente o uso de redes sociais é algo grandemente comum na sociedade e existem diversos tipos e finalidades para as anteriores, dentre as mais famosas podemos citar: Facebook, YouTube, Twitter e WhatsApp.
 
 Com base numa análise feita através de um questionário entregue respondido por discentes, neste relatório buscamos responder a seguinte pergunta:
 
@@ -23,7 +23,7 @@ Com base numa análise feita através de um questionário entregue respondido po
 
 ## Análises
 
-### Jovens passam mais tempo nas redes sociais?
+### Jovens passam mais tempo nas Redes Sociais?
 ```{r echo=FALSE, fig.width=11}
 idade1 <- subset(df, idade == 1)
 idade2 <- subset(df, idade == 2)
@@ -45,13 +45,13 @@ barplot(c(md1, md2, md3, md4, md5, md6),
         col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "blue","purple", "green3"))
 ```
 
-Analisando o gráfico acima, podemos perceber que a utilização das redes sociais continua predominantemente entre a população jovem, sendo que na amostra, os jovens de 20 a 25 anos são os que mais gastam horas navegando nas redes sociais.
+Analisando o gráfico acima, podemos perceber que a utilização das redes sociais continua predominantemente entre a população jovem, sendo que na amostra, os jovens com idade entre 21 e 25 anos são os que mais gastam horas navegando nas redes sociais.
 
 Assim como a sociedade, as metodologias de ensino buscam se aperfeiçoar e adaptar-se com o passar do tempo e levando em consideração o grande uso das redes sociais pelos alunos, seria uma estratégia interessante por parte dos professores, utiliza-las como ferramenta de ensino.
 
-### O uso das redes sociais como ferramenta de ensino.
+### O uso das Redes Sociais como ferramenta de ensino.
 
-Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru, foi questionado se a mídia social é a melhor forma de aproximação entre professor e aluno e se deveria ou poderia ser utilizada pelos professores. Com base nos resultados apresentados nos gráficos abaixo, podemos afirmar que os discentes têm grande adesão quanto ao uso de mídias para essa utilização.
+Durante a pesquisa realizada com os discentes de nível superior da UNESP-Bauru, foi questionado se as mídias sociais são a melhor forma de aproximação entre professor e aluno e se deveriam ou poderiam serem utilizadas pelos professores. Com base nos resultados apresentados nos gráficos abaixo, podemos afirmar que os discentes têm grande adesão quanto à utilização das mídias para esta aproximação.
 
 ```{r echo=FALSE, fig.width=9}
 uacad=table(df$usoacademico)
@@ -71,7 +71,7 @@ pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "gr
     lty = NULL, main = "Mídia Social é a melhor forma de aproximação Professor/Aluno")
 ```
 
-Com a facilidade do compartilhamento de dados e comunicação fornecida, a utilização dessas redes trariam muitos benefícios. Segundo Carvalho Jr., dentro das possibilidades de redes sociais como o Facebook, por exemplo, o professor pode:
+Com a facilidade do compartilhamento de dados e comunicação fornecida, a utilização das Redes Sociais traria muitos benefícios. Segundo Carvalho Jr., dentro das possibilidades de redes sociais como o Facebook, por exemplo, o professor pode:
 
 "- Postar fotos, textos e reportagens de determinado tema desenvolvido em aula, como a realidade profissional de algumas modalidades esportivas visando sempre ao debate e aprofundamento do estudo;
 - Convidar pessoas (alunos, professores, profissionais renomados) de fora da instituição para participar do debate e estudo, promovendo intercâmbio entre os estudantes e enriquecendo a aprendizagem;
@@ -81,7 +81,7 @@ Com a facilidade do compartilhamento de dados e comunicação fornecida, a utili
 - Divulgar eventos esportivos e culturais, dicas e orientações de estudo, de atividades físicas e de atividades de lazer."
 (CARVALHO JR, A. 2014)
 
-Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O gráfico 4 ilustra os dados.
+Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O próximo gráfico ilustra os dados.
 
 ```{r echo=FALSE, fig.width=9}
 mres=table(df$melhoraresul)
@@ -121,12 +121,12 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
 pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
 ```
 
-Analisando o gráfico acima, podemos perceber que quem utiliza as redes sociais para compartilhamento de fotos e vídeos são as pessoas que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
+Analisando o gráfico acima, podemos perceber que as pessoas que utilizam as redes sociais para compartilhamento de fotos e vídeos são as que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
 
 ### O revés das redes sociais como ferramenta.
 
-Por mais que as redes sociais possam parecer atraentes e tenham uma grande adesão, é importante levar em consideração as dificuldades que elas apresentam em relação ao aprendizado. O maior desafio é é transformar a presença dos aparelhos tecnológicos em aproveitamento real.
-Quando questionados sobre as principais dificuldades do uso das mídias sociais em um ambiente educacional, a maior escolha por parte de nossa amostra foi disparada a opção distração, como é possível ver no gráfico 5.
+Por mais que as redes sociais possam parecer atraentes e tenham uma grande adesão, é importante levar em consideração as dificuldades que elas apresentam em relação ao aprendizado. O maior desafio é o de transformar a presença dos aparelhos tecnológicos em aproveitamento real.
+Quando questionados sobre as principais dificuldades do uso das mídias sociais em um ambiente educacional, a maior escolha por parte de nossa amostra foi em sua grande maioria a opção "distração"", como é possível ver no próximo gráfico.
 
 ```{r echo=FALSE, fig.width=11}
 barplot(pd$X__1, main = "Principais dificuldades de uso de Mídias Sociais em um ambiente educacional", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70), col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1"))
@@ -134,7 +134,7 @@ barplot(pd$X__1, main = "Principais dificuldades de uso de Mídias Sociais em um
 
 Com os discentes constantemente conectados e a grande quantidade de opções de entretenimento disponíveis, é fácil acabar se distraindo, e esse é um problema para todas as gerações. Em uma tentativa de resolver o problema, a Lei Distrital nº 4.131/2008 proíbe a utilização de aparelhos celulares na sala de aula dos colégios no Distrito Federal. (MEIRA, S. 2016)
 
-Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se ferramentas de interação como as redes sociais. Para isso é necessário que o professor tenha conhecimento de tais ferramentas. Não é raro encontrar casos onde instituições introduzem a tecnologia como medida de marketing, tentando passar uma imagem de modernidade.
+Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se ferramentas de interação como as redes sociais. Para isso é necessário que o professor tenha conhecimento de tais ferramentas, além de um certo controle das ações que os alunos realizam através das mesmas. Não é raro encontrar casos onde instituições introduzem a tecnologia como medida de marketing, tentando passar uma imagem de modernidade, mas que muitas vezes não se sai tão bem quantoo prometido.
 
 # Caso as redes sociais se tornem realmente uma ferramenta de apoio para os professores, por onde eles devem começar
 
@@ -142,7 +142,7 @@ Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se
 
 As redes sociais são ambientes virtuais informais, sendo grande parte delas de acesso irrestrito. Muitas instituições de ensino, principalmente na modalidade Educação a Distância (EaD), oferecem suas próprias redes, plataformas virtuais abertas para seus alunos e professores com grupos de discussões, chats e troca de arquivos. (CARVALHO JR, A. 2014)
 
-Abaixo podemos ver as redes sociais mais utilizadas pela amostra, onde aqueles professores interessados em utilizar uma rede social como ferramenta poderiam tentar inciar.
+Abaixo podemos ver as redes sociais mais utilizadas pela amostra, onde aqueles professores interessados em utilizar uma rede social como ferramenta, poderiam tentar uma aproximação ou atividada que envolvesse as mesmas.
 
 ```{r echo=FALSE, fig.width=11}
 barplot(sm$Usuarios, main = "Numero de usuários por Rede Social", names.arg = sm$`Rede Social`, ylim = c(0, 70), col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"))
@@ -155,8 +155,7 @@ barplot(sm$Usuarios, main = "Numero de usuários por Rede Social", names.arg = s
 ```
 
 ### Conclusão
-Os professores estão começando a utilizar as redes sociais para auxiliar no ensino e os alunos acham que essa é uma forma muito boa. Melhora o aprendizado, é prático, fácil...
-Mas uma rede social não substitui um professor de verdade, o qual possui didática, estudou para se dedicar à profissão de ensino.
+Portanto, muitas instituições estão começando a utilizar as redes sociais para auxiliar no ensino e tentar uma melhora no rendimento dos alunos. Os alunos acham que esta é uma técnica interessante e que pode melhorar o aproveitamento em sala de aula, com melhora do aprendizado, praticidade, fácilidade no acesso às informações, entre outras características. Ainda assim, muitos professores ainda tem preconceito com a utilização das ferramentas citadas acima, pois ainda é muito complicado de se controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores. Além disso, é sempre bom lembrar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem um professor de verdade, e sem o auxílio do mesmo, qualquer técnica de introdução destas ferramentas no processo ensino se torna inútil.
 
 ### Referências Bibliográficas
 
