@@ -10,6 +10,12 @@ library(readxl)
 df <- read_excel("../dados/umses_alunos_2018.xlsx")
 ```
 
+Bruno Carvalho Logerfo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151023336    
+Gustavo Hildebrand Batista&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151024693  
+João Victor Fayad Andreotti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151023115  
+Lucas Fernandes Nogueira&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151022658  
+Pedro Guilherme Somenci Silva &nbsp;&nbsp; 151024464  
+
 ## Introdução
 
 Com o surgimento da Internet na década de 90, a comunicação e troca de informações à distância entre pessoas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse complementada pelas Redes Sociais. Estas ferramentas tornaram-se populares principalmente entre os jovens, por razões como a novidade que as mesmas representam e a maior facilidade de interação entre os mais jovens.

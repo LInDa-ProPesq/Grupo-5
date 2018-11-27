@@ -1,6 +1,12 @@
 Ciência de dados
 ========================================================
 Uma analise sobre as  influências das mídias  sociais nos alunos da  UNESP
+  
+Bruno Carvalho Logerfo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151023336    
+Gustavo Hildebrand Batista &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151024693  
+João Victor Fayad Andreotti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151023115  
+Lucas Fernandes Nogueira &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151022658  
+Pedro Guilherme Somenci Silva &nbsp;&nbsp;&nbsp;&nbsp;151024464
 
 ```{r include=FALSE}
 if (!require(readxl)) install.packages('readxl')
