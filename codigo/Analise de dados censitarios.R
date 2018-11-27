@@ -122,10 +122,21 @@ dev.off()
 #===============================================
 
 #====== Trabalho de dados - Motivos de uso =========
-mu <- read_excel("dados/motivos_uso.xlsx")
-mu
+contatos <- as.vector(table(df$contato))[1]
+atualizado <- as.vector(table(df$atualizado))[1]
+preencher <- as.vector(table(df$preencher))[1]
+encontrar <- as.vector(table(df$encontrar))[1]
+compopiniao <- as.vector(table(df$compopiniao))[1]
+compfoto <- as.vector(table(df$compfoto))[1]
+amigosja <- as.vector(table(df$amigosja))[1]
+profnetwork <- as.vector(table(df$profnetwork))[1]
+novaamizade <- as.vector(table(df$novaamizade))[1]
+compdetalhe <- as.vector(table(df$compdetalhe))[1]
+outros_motivos <- as.vector(table(df$outros_motivos))[1]
 png(filename="graficos/aed_survey_motivos_uso.png", width = 1920, height = 1080, pointsize = 16)
-barplot(mu$X__1, main = "Principais usos das redes sociais", names.arg = mu$Motivos, ylim = c(0, 70))
+barplot(c(contatos, atualizado, preencher, encontrar, compopiniao, compfoto, amigosja, profnetwork, novaamizade, compdetalhe, outros_motivos),
+        names.arg = c("Contatos", "Manter atualizado", "Tempo livre", "Encontrar conteúdo", "Opinião", "Compartilhar fotos", "Amigos já utilizam", "Networking", "Novas amizades", "Assuntos de trabalho", "Outros motivos"),
+        main = "Principais usos das redes sociais", ylim = c(0, 70))
 dev.off()
 #===================================================
 
