@@ -1,6 +1,6 @@
 Ciência de dados
 ========================================================
-Uma analise sobre as  influências das mídias  sociais nos alunos da  UNESP
+Uma análise sobre as  influências das mídias  sociais nos alunos da  UNESP
   
 Bruno Carvalho Logerfo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151023336    
 Gustavo Hildebrand Batista &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151024693  
@@ -61,7 +61,7 @@ Relação idade e o tempo nas redes sociais
 
 - Sendo os de 21 a 25 anos os principais utilizadores.
 
-- Principal faixa etária que compoe as instituições de ensino superior.
+- Principal faixa etária que compõe as instituições de ensino superior.
   - Sendo interessante para a utilização no meio acadêmico
 
 Redes sociais como ferramenta de ensino                 
@@ -111,7 +111,7 @@ Mídias sociais melhorando resultados
 - Maioria concorda numa melhora de resultados através da rede social
 
 - Grande parte (26,5%) não sabe afirmar se é uma boa forma melhorar resultados
-  - Demonstrando a necessidade de testes validação do metodo
+  - Demonstrando a necessidade de testes validação do método
   
 Tipos de uso
 ========================================================
@@ -148,7 +148,7 @@ pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", 
 Tipos de uso
 ========================================================
 
-- Predominio do tempo livre e encontrar conteúdo com base nos interesses
+- Predomínio do tempo livre e encontrar conteúdo com base nos interesses
 
 - Parcela significativa de uso para compartilhamento de arquivos
   - Podendo demonstrar a aplicação como ferramenta de uso acadêmico (troca de informações)
@@ -206,7 +206,7 @@ Onde os alunos estão?
   
   - Com atenção ao Youtube caso tenham grande demanda por vídeos
 
-O tempo gasto influencia na crença que o seu uso pode melhorar os resultados?
+O tempo gasto influência na crença que o seu uso pode melhorar os resultados?
 ========================================================
 
 ```{r echo=FALSE, fig.width=12, fig.height=5}
@@ -245,10 +245,10 @@ Conclusão
 
 - Instituições estão começando a adotar as redes sociais para auxiliar no ensino.
 - Alunos acham que é uma técnica interessante podendo melhorar o aproveitamento em sala de aula.
-  - Com melhora do aprendizado, praticidade, fácilidade no acesso às informações. 
-- Ainda exite resistência por meio dos professores.
+  - Com melhora do aprendizado, praticidade, facilidade no acesso às informações. 
+- Ainda existe resistência por meio dos professores.
   - Dado a dificuldade de se controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores.
-- Vale ressaltar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem o proprio professor.
+- Vale ressaltar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem o próprio professor.
 
 Referências Bibliográficas
 ========================================================
