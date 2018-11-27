@@ -104,18 +104,39 @@ dev.off()
 #===============================================
 
 #======= Trabalho de dados - Número de Usuarios por rede social ===========
-sm <- read_excel("dados/redessociais.xlsx")
-sm
+facebook <- as.vector(table(df$facebook))[1]
+twitter <- as.vector(table(df$twitter))[1]
+whatsapp <- as.vector(table(df$whatsapp))[1]
+linkedin <- as.vector(table(df$linkedin))[1]
+youtube <- as.vector(table(df$youtube))[1]
+instagram <- as.vector(table(df$instagram))[1]
+snapchat <- as.vector(table(df$snapchat))[1]
+tumblr <- as.vector(table(df$tumblr))[1]
+pinterest <- as.vector(table(df$pinterest))[1]
+outras_plataformas <- as.vector(table(df$outras_plataformas))[1]
 png(filename="graficos/aed_survey_redes_socias.png", width = 1920, height = 1080, pointsize = 16)
-barplot(sm$Usuarios, main = "Numero de usuários por rede Social", names.arg = sm$`Rede Social`, ylim = c(0, 70)) 
+barplot(c(facebook, twitter, whatsapp, linkedin, youtube, instagram, snapchat, tumblr, pinterest, outras_plataformas),
+        names.arg = c("Facebook", "Twitter", "Whatsapp", "LinkedIn", "Youtube", "Instagram", "Snapchat", "Tumblr", "Pinterest", "Outras Plataformas"),
+        main = "Numero de usuários por rede Social", ylim = c(0, 70))
 dev.off()
 #===============================================
 
 #====== Trabalho de dados - Motivos de uso =========
-mu <- read_excel("dados/motivos_uso.xlsx")
-mu 
+contatos <- as.vector(table(df$contato))[1]
+atualizado <- as.vector(table(df$atualizado))[1]
+preencher <- as.vector(table(df$preencher))[1]
+encontrar <- as.vector(table(df$encontrar))[1]
+compopiniao <- as.vector(table(df$compopiniao))[1]
+compfoto <- as.vector(table(df$compfoto))[1]
+amigosja <- as.vector(table(df$amigosja))[1]
+profnetwork <- as.vector(table(df$profnetwork))[1]
+novaamizade <- as.vector(table(df$novaamizade))[1]
+compdetalhe <- as.vector(table(df$compdetalhe))[1]
+outros_motivos <- as.vector(table(df$outros_motivos))[1]
 png(filename="graficos/aed_survey_motivos_uso.png", width = 1920, height = 1080, pointsize = 16)
-barplot(mu$X__1, main = "Principais usos das redes sociais", names.arg = mu$Motivos, ylim = c(0, 70)) 
+barplot(c(contatos, atualizado, preencher, encontrar, compopiniao, compfoto, amigosja, profnetwork, novaamizade, compdetalhe, outros_motivos),
+        names.arg = c("Contatos", "Manter atualizado", "Tempo livre", "Encontrar conteúdo", "Opinião", "Compartilhar fotos", "Amigos já utilizam", "Networking", "Novas amizades", "Assuntos de trabalho", "Outros motivos"),
+        main = "Principais usos das redes sociais", ylim = c(0, 70))
 dev.off()
 #===================================================
 
@@ -177,9 +198,9 @@ dev.off()
 
 #====== Trabalho de dados - Principais dificuldades =========
 pd <- read_excel("dados/principais_dificuldades.xlsx")
-pd 
+pd
 png(filename="graficos/aed_survey_principais_dificuldades.png", width = 1920, height = 1080, pointsize = 16)
-barplot(pd$X__1, main = "Principais dificuldades", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70)) 
+barplot(pd$X__1, main = "Principais dificuldades", names.arg = pd$`Principais Dificuldades`, ylim = c(0, 70))
 dev.off()
 #===================================================
 
