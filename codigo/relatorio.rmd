@@ -12,7 +12,7 @@ df <- read_excel("../dados/umses_alunos_2018.xlsx")
 
 ## Introdução
 
-Com o surgimento da Internet na década de 90, a comunicação e troca de informações à distância entre pessoas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse complementada pelas Redes Sociais. Estas ferramentas tornaram-se populares principalmente entre os jovens, por razões como a novidade que as mesmas representam e a maior facilidade de interação entre pessoas mais jovens.
+Com o surgimento da Internet na década de 90, a comunicação e troca de informações à distância entre pessoas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse complementada pelas Redes Sociais. Estas ferramentas tornaram-se populares principalmente entre os jovens, por razões como a novidade que as mesmas representam e a maior facilidade de interação entre os mais jovens.
 Atualmente o uso de redes sociais é algo grandemente comum na sociedade e existem diversos tipos e finalidades para as anteriores, dentre as mais famosas podemos citar: Facebook, YouTube, Twitter e WhatsApp.
 
 Com base numa análise feita através de um questionário entregue respondido por discentes, neste relatório buscamos responder a seguinte pergunta:
@@ -79,7 +79,7 @@ Com a facilidade do compartilhamento de dados e comunicação fornecida, a utili
 - Divulgar eventos esportivos e culturais, dicas e orientações de estudo, de atividades físicas e de atividades de lazer."
 (CARVALHO JR, A. 2014)
 
-Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto. O próximo gráfico ilustra os dados.
+Além dos benefícios acima citados, 58,8% dos entrevistados acreditam que o uso das mídias sociais podem melhorar os resultados dos discentes, contra uma rejeição de apenas 14,7%. 26,5% dos entrevistados não sabem ou não puderam opinar sobre o assunto, o que da embasamento para que professores possam testar em sala de aula a utilização das redes sociais. Levando em conta que haverá aceitação da utilização da rede social em sala de aula. O próximo gráfico ilustra os dados.
 
 ```{r echo=FALSE, fig.width=9}
 mres=table(df$melhoraresul)
@@ -119,7 +119,7 @@ n<-c("Para ficar em contato com o que os amigos estão fazendo",
 pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
 ```
 
-Analisando o gráfico acima, podemos perceber que as pessoas que utilizam as redes sociais para compartilhamento de fotos e vídeos são as que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos.
+Analisando o gráfico acima, podemos perceber que as pessoas que utilizam as redes sociais para compartilhamento de fotos e vídeos são as que mais acreditam que as mídias sociais são a melhor forma de aproximar os professores dos alunos. Devemos levar em consideração também que os alunos já utilizam as redes sociais com a finalidade de auxiliar a comunicação fora da sala de aula entre eles, como por exemplo trocando arquivos, vendo video aulas e marcando grupo de estudos, entre outros.
 
 ### O revés das redes sociais como ferramenta.
 
@@ -141,7 +141,7 @@ barplot(c(distracao, usoindev, prejintera, bulling, continadeq, outras_dificulda
 
 Com os discentes constantemente conectados e a grande quantidade de opções de entretenimento disponíveis, é fácil acabar se distraindo, e esse é um problema para todas as gerações. Em uma tentativa de resolver o problema, a Lei Distrital nº 4.131/2008 proíbe a utilização de aparelhos celulares na sala de aula dos colégios no Distrito Federal. (MEIRA, S. 2016)
 
-Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se ferramentas de interação como as redes sociais. Para isso é necessário que o professor tenha conhecimento de tais ferramentas, além de um certo controle das ações que os alunos realizam através das mesmas. Não é raro encontrar casos onde instituições introduzem a tecnologia como medida de marketing, tentando passar uma imagem de modernidade, mas que muitas vezes não se sai tão bem quantoo prometido.
+Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se de ferramentas de interação como as redes sociais. Para isso é necessário que o professor tenha conhecimento de tais ferramentas, além de um certo controle das ações que os alunos realizam através das mesmas. Não é raro encontrar casos onde instituições introduzem a tecnologia como medida de marketing, tentando passar uma imagem de modernidade, mas que muitas vezes não se sai tão bem quanto prometido.
 
 # Caso as redes sociais se tornem realmente uma ferramenta de apoio para os professores, por onde eles devem começar
 
@@ -149,7 +149,7 @@ Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se
 
 As redes sociais são ambientes virtuais informais, sendo grande parte delas de acesso irrestrito. Muitas instituições de ensino, principalmente na modalidade Educação a Distância (EaD), oferecem suas próprias redes, plataformas virtuais abertas para seus alunos e professores com grupos de discussões, chats e troca de arquivos. (CARVALHO JR, A. 2014)
 
-Abaixo podemos ver as redes sociais mais utilizadas pela amostra, onde aqueles professores interessados em utilizar uma rede social como ferramenta, poderiam tentar uma aproximação ou atividada que envolvesse as mesmas.
+Abaixo podemos ver as redes sociais mais utilizadas pela amostra, onde aqueles professores interessados em utilizar uma rede social como ferramenta, poderiam tentar uma aproximação ou atividade que envolvesse as mesmas.
 
 ```{r echo=FALSE, fig.width=11}
 facebook <- as.vector(table(df$facebook))[1]
@@ -202,9 +202,10 @@ barplot(x,
 ```
 
 ### Conclusão
-Portanto, muitas instituições estão começando a utilizar as redes sociais para auxiliar no ensino e tentar uma melhora no rendimento dos alunos. Os alunos acham que esta é uma técnica interessante e que pode melhorar o aproveitamento em sala de aula, com melhora do aprendizado, praticidade, fácilidade no acesso às informações, entre outras características. Ainda assim, muitos professores ainda tem preconceito com a utilização das ferramentas citadas acima, pois ainda é muito complicado de se controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores. Além disso, é sempre bom lembrar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem um professor de verdade, e sem o auxílio do mesmo, qualquer técnica de introdução destas ferramentas no processo de ensino se torna inútil.
+Dado o que foi apresententado neste relatório podemos concluir que, muitas instituições estão começando a utilizar as redes sociais para auxiliar no ensino e tentar uma melhora no rendimento dos alunos. Segundo o que foi exposto neste relatório alunos acham que esta é uma técnica interessante e que pode sim melhorar o aproveitamento deles em sala de aula, como a melhora do aprendizado, praticidade, fácilidade no acesso às informações, entre outras características.  
+Ainda assim, professores tem certo preconceito com a utilização das redes sociais como ferramentas de auxilio, pois ainda é muito complicado de controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores. Além disso, é sempre bom lembrar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem um professor de verdade, e sem o auxílio do mesmo, qualquer técnica de introdução destas ferramentas no processo de ensino se torna inútil.
 
 ### Referências Bibliográficas
 
-CARVALHO JR., Arlindo. **As redes sociais como ferramentas didáticas virtuais de interação e ensino**. Disponível em: <http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino>. Acesso em: 26 de nov. de 2018
+CARVALHO JR., Arlindo. **As redes sociais como ferramentas didáticas virtuais de interação e ensino**. Disponível em: <http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino>. Acesso em: 26 de nov. de 2018  
 MEIRA, Samara. **REDES SOCIAIS COMO FERRAMENTA DE ENSINO DOS FENÔMENOS ÓPTICOS**. Disponível em: <http://mnpef.fis.unb.br/download/dissertacao_samara.pdf>. Acesso em: 26 de nov. de 2018
