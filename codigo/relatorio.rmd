@@ -12,7 +12,7 @@ df <- read_excel("../dados/umses_alunos_2018.xlsx")
 
 ## Introdução
 
-Com o surgimento da Internet na década de 90, a comunicação e troca de informações à distância entre pessoas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse complementada pelas Redes Sociais. Estas ferramentas tornaram-se populares principalmente entre os jovens, por razões como a novidade que as mesmas representam e a maior facilidade de interação entre pessoas de menor idade.
+Com o surgimento da Internet na década de 90, a comunicação e troca de informações à distância entre pessoas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse complementada pelas Redes Sociais. Estas ferramentas tornaram-se populares principalmente entre os jovens, por razões como a novidade que as mesmas representam e a maior facilidade de interação entre pessoas mais jovens.
 Atualmente o uso de redes sociais é algo grandemente comum na sociedade e existem diversos tipos e finalidades para as anteriores, dentre as mais famosas podemos citar: Facebook, YouTube, Twitter e WhatsApp.
 
 Com base numa análise feita através de um questionário entregue respondido por discentes, neste relatório buscamos responder a seguinte pergunta:
