@@ -1,5 +1,6 @@
-Apresentação
+Ciência de dados
 ========================================================
+Uma analise sobre as  influências das mídias  sociais nos alunos da  UNESP
 
 ```{r include=FALSE}
 if (!require(readxl)) install.packages('readxl')
@@ -11,16 +12,21 @@ df <- read_excel("../dados/umses_alunos_2018.xlsx")
 Introdução
 ========================================================
 
-Com o surgimento da Internet na década de 90, a comunicação e troca de informações entre pessoas remotas se tornou muito mais simples e prática, e não demorou muito para que essa tecnologia fosse ocupada por Redes Sociais. Essas redes se tornaram popular principalmente entre os jovens.
-Atualmente o uso de redes sociais é algo comum na sociedade e existem diversos tipos, dentre as mais famosa, podemos citar: Facebook, YouTube, Twitter, WhatsApp.
+- Com a Internet a comunicação e troca de informações se tornou muito mais simples e prática.
 
-Com base numa análise feita através de um questionário entregue respondido por discentes, neste relatório buscamos responder a seguinte pergunta:
+- Dando força para as <b>Redes Sociais</b>. Com maior popularidade entre os jovens.
+
+- Dentre as mais notáveis temos: 
+  - Facebook, YouTube, Twitter, WhatsApp.
+
+Com base num questionário respondido pelos alunos, neste relatório buscamos responder a seguinte pergunta:
 
 **Quais são as influências das mídias sociais sobre discentes da instituição de nível superior UNESP-Bauru-SP?**
 
-Jovens passam mais tempo nas redes sociais?
+Relação idade e o tempo nas redes sociais
 ========================================================
 
+  
 ```{r echo=FALSE, fig.width=11}
 idade1 <- subset(df, idade == 1)
 idade2 <- subset(df, idade == 2)
@@ -42,10 +48,21 @@ barplot(c(md1, md2, md3, md4, md5, md6),
         col=c("aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "blue","purple", "green3"))
 ```
 
-O uso das redes sociais como ferramenta de ensino
+Relação idade e o tempo nas redes sociais
 ========================================================
 
-```{r echo=FALSE, fig.width=9}
+- Utilização continua predominantemente entre os jovens.
+
+- Sendo os de 21 a 25 anos os principais utilizadores.
+
+- Principal faixa etária que compoe as instituições de ensino superior.
+  - Sendo interessante para a utilização no meio acadêmico
+
+Redes sociais como ferramenta de ensino                 
+========================================================
+
+
+```{r echo=FALSE, fig.width=10}
 uacad=table(df$usoacademico)
 lblua <- c("Não", "Sim", "Sim, porém com restrições", "Não sei/Não tenho opinião")
 pctua <- round(uacad/sum(uacad)*100, digits=1)
@@ -54,7 +71,7 @@ pie(uacad, labels = lblua, edges = 100, angle = 45, col = c("blue","purple", "gr
     lty = NULL, main = "Mídia Social deve ser utilizada pelos professores")
 ```
 ***
-```{r echo=FALSE, fig.width=9}
+```{r echo=FALSE, fig.width=10}
 aprox=table(df$profchegaal)
 lblap <- c("Não", "Sim", "Não sei/Não tenho opinião")
 pctap <- round(aprox/sum(aprox)*100, digits=1)
@@ -62,3 +79,174 @@ lblap <- paste0(pctap, "%", lblap)
 pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
     lty = NULL, main = "Mídia Social é a melhor forma de aproximação Professor/Aluno")
 ```
+
+Redes sociais como ferramenta de ensino
+========================================================
+
+- Ampla maioria concorda com a utilização pelo professor
+
+- Não há definição clara se a mídia é a melhor forma de aproximação professor/aluno
+
+Mídias sociais melhorando resultados
+========================================================
+
+```{r echo=FALSE, fig.width=9}
+mres=table(df$melhoraresul)
+lblmr <- c("Não", "Sim", "Não sei/Não tenho opinião")
+pctmr <- round(mres/sum(mres)*100, digits=1)
+lblmr <- paste0(pctmr, "% - ", lblmr)
+pie(mres, labels = lblmr, edges = 100, angle = 45, col = c("blue","purple", "green3"), border = NULL,
+    lty = NULL, main = "Mídia Social pode melhorar os resultados dos alunos")
+```
+
+Mídias sociais melhorando resultados
+========================================================
+
+- Maioria concorda numa melhora de resultados através da rede social
+
+- Grande parte (26,5%) não sabe afirmar se é uma boa forma melhorar resultados
+  - Demonstrando a necessidade de testes validação do metodo
+  
+Tipos de uso
+========================================================
+  
+```{r echo=FALSE, fig.width=13, fig.height=6}
+contato <- df[df$contato == 1,]
+atualizado <- df[df$atualizado == 1,]
+preencher <- df[df$preencher == 1,]
+encontrar <- df[df$encontrar == 1,]
+compopiniao <- df[df$compopiniao == 1,]
+compfoto <- df[df$compfoto == 1,]
+amigosja <- df[df$amigosja == 1,]
+profnetwork <- df[df$profnetwork == 1,]
+novaamizade <- df[df$novaamizade == 1,]
+compdetalhe <- df[df$compdetalhe == 1,]
+x<-c(table(contato$melhoraresul)[2], table(atualizado$melhoraresul)[2],
+     table(preencher$melhoraresul)[2], table(encontrar$melhoraresul)[2],
+     table(compopiniao$melhoraresul)[2], table(compfoto$melhoraresul)[2],
+     table(amigosja$melhoraresul)[2], table(profnetwork$melhoraresul)[2],
+     table(novaamizade$melhoraresul)[2], table(compdetalhe$melhoraresul)[2])
+n<-c("Para ficar em contato com o que os amigos estão fazendo",
+     "Para manter-se atualizado com notícias e eventos atuais",
+     "Para preencher o tempo livre",
+     "Para encontrar conteúdo interessante e/ou divertido",
+     "Para compartilhar opiniões",
+     "Para compartilhar fotos ou vídeos com outras pessoas",
+     "Porque os amigos já estão neles",
+     "Realizar networking profissional com outras pessoas",
+     "Conhecer novas pessoas",
+     "Compartilhar detalhes e assuntos de trabalho")
+pie(x, labels = n, col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"), main = "Principais usos das Mídias Sociais")
+```
+
+Tipos de uso
+========================================================
+
+- Predominio do tempo livre e encontrar conteúdo com base nos interesses
+
+- Parcela significativa de uso para compartilhamento de arquivos
+  - Podendo demonstrar a aplicação como ferramenta de uso acadêmico (troca de informações)
+  
+Os problemas das mídias sociais
+========================================================
+
+```{r echo=FALSE, fig.width=11}
+distracao <- as.vector(table(df$distracao))[1]
+usoindev <- as.vector(table(df$usoindev))[1]
+prejintera <- as.vector(table(df$prejintera))[1]
+bulling <- as.vector(table(df$bulling))[1]
+continadeq <- as.vector(table(df$continadeq))[1]
+outras_dificuldades <- as.vector(table(df$outras_dificuldades))[1]
+barplot(c(distracao, usoindev, prejintera, bulling, continadeq, outras_dificuldades),
+        names.arg = c("Distração", "Uso indevido", "Prejudicial", "Cyberbullying", "Conteúdo inadequado", "Outras"),
+        main = "Principais dificuldades de uso de Mídias Sociais em um ambiente educacional", ylim = c(0, 70),
+        col = c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1"))
+```
+
+Os problemas das mídias sociais
+========================================================
+
+- Distração principal dificuldade a ser enfrentada
+
+- Seguido de uso indevido e conteúdo inadequado
+
+- Dificuldades enfrentadas na utilização de plataforma abrangentes, não dedicadas
+
+Onde os alunos estão?
+========================================================
+
+```{r echo=FALSE, fig.width=15}
+facebook <- as.vector(table(df$facebook))[1]
+twitter <- as.vector(table(df$twitter))[1]
+whatsapp <- as.vector(table(df$whatsapp))[1]
+linkedin <- as.vector(table(df$linkedin))[1]
+youtube <- as.vector(table(df$youtube))[1]
+instagram <- as.vector(table(df$instagram))[1]
+snapchat <- as.vector(table(df$snapchat))[1]
+tumblr <- as.vector(table(df$tumblr))[1]
+pinterest <- as.vector(table(df$pinterest))[1]
+outras_plataformas <- as.vector(table(df$outras_plataformas))[1]
+barplot(c(facebook, twitter, whatsapp, linkedin, youtube, instagram, snapchat, tumblr, pinterest, outras_plataformas),
+        names.arg = c("Facebook", "Twitter", "Whatsapp", "LinkedIn", "Youtube", "Instagram", "Snapchat", "Tumblr", "Pinterest", "Outras Plataformas"),
+        main = "Numero de usuários por rede Social", ylim = c(0, 70), col = c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2", "deeppink1"))
+```
+
+Onde os alunos estão?
+========================================================
+
+- Por onde começar?
+  - Professores devem focar nos principais: 
+    - Facebook e WhatsApp
+  
+  - Com atenção ao Youtube caso tenham grande demanda por vídeos
+
+O tempo gasto influencia na crença que o seu uso pode melhorar os resultados?
+========================================================
+
+```{r echo=FALSE, fig.width=12, fig.height=5}
+naousa <- df[df$tempogasto == 1,]
+cinco_dez <- df[df$tempogasto == 2,]
+dez_trinta <- df[df$tempogasto == 3,]
+trinta_sessenta <- df[df$tempogasto == 4,]
+sessenta_120 <- df[df$tempogasto == 5,]
+centoevinte_180 <- df[df$tempogasto == 6,]
+centoeoitenta_240 <- df[df$tempogasto == 7,]
+duzentosequarenta_300 <- df[df$tempogasto == 8,]
+mais_300 <- df[df$tempogasto == 9,]
+x<-c(table(naousa$melhoraresul)['2'], table(cinco_dez$melhoraresul)['2'],
+     table(dez_trinta$melhoraresul)['2'], table(trinta_sessenta$melhoraresul)['2'],
+     table(sessenta_120$melhoraresul)['2'], table(centoevinte_180$melhoraresul)['2'],
+     table(centoeoitenta_240$melhoraresul)['2'], table(duzentosequarenta_300$melhoraresul)['2'],
+     table(mais_300$melhoraresul)['2'])
+n<-c("Não usa",
+     "5 - 10m",
+     "10 - 30m",
+     "30m - 1h",
+     "1 - 2h",
+     "2 - 3h",
+     "3 - 4h",
+     "4 - 5h",
+     "+5h")
+barplot(x,
+        names.arg = n,
+        main = "Tempo médio gasto em sites de Redes Sociais VS melhora de resultado",
+        col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2"))
+```
+- Pessoas que utilizam a rede social por mais tempo acreditam com maior frequência que o seu uso pode melhorar os resultado.
+
+Conclusão
+========================================================
+
+- Instituições estão começando a adotar as redes sociais para auxiliar no ensino.
+- Alunos acham que é uma técnica interessante podendo melhorar o aproveitamento em sala de aula.
+  - Com melhora do aprendizado, praticidade, fácilidade no acesso às informações. 
+- Ainda exite resistência por meio dos professores.
+  - Dado a dificuldade de se controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores.
+- Vale ressaltar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem o proprio professor.
+
+Referências Bibliográficas
+========================================================
+
+CARVALHO JR., Arlindo. **As redes sociais como ferramentas didáticas virtuais de interação e ensino**. Disponível em: <http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino>. Acesso em: 26 de nov. de 2018
+
+MEIRA, Samara. **REDES SOCIAIS COMO FERRAMENTA DE ENSINO DOS FENÔMENOS ÓPTICOS**. Disponível em: <http://mnpef.fis.unb.br/download/dissertacao_samara.pdf>. Acesso em: 26 de nov. de 2018
