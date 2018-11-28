@@ -1,12 +1,14 @@
 Ciência de dados
 ========================================================
 Uma análise sobre as  influências das mídias  sociais nos alunos da  UNESP
-  
-Bruno Carvalho Logerfo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151023336    
-Gustavo Hildebrand Batista &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151024693  
-João Victor Fayad Andreotti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151023115  
-Lucas Fernandes Nogueira &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151022658  
-Pedro Guilherme Somenci Silva &nbsp;&nbsp;&nbsp;&nbsp;151024464
+
+|   |   |
+|---|---|
+|<font color="white">Bruno Carvalho Logerfo</font>|<font color="white">151023336</font>|
+|<font color="white">Gustavo Hildebrand Batista</font>|<font color="white">151024693</font>|
+|<font color="white">João Victor Fayad Andreotti</font>|<font color="white">151023115</font>|
+|<font color="white">Lucas Fernandes Nogueira</font>|<font color="white">151022658</font>|
+|<font color="white">Pedro Guilherme Somenci Silva</font>|<font color="white">151024464</font>|
 
 
 
@@ -17,7 +19,7 @@ Introdução
 
 - Dando força para as <b>Redes Sociais</b>. Com maior popularidade entre os jovens.
 
-- Dentre as mais notáveis temos: 
+- Dentre as mais notáveis temos:
   - Facebook, YouTube, Twitter, WhatsApp.
 
 Com base num questionário respondido pelos alunos, neste relatório buscamos responder a seguinte pergunta:
@@ -27,7 +29,7 @@ Com base num questionário respondido pelos alunos, neste relatório buscamos re
 Relação idade e o tempo nas redes sociais
 ========================================================
 
-  
+
 ![plot of chunk unnamed-chunk-2](apresentacao-figure/unnamed-chunk-2-1.png)
 
 Relação idade e o tempo nas redes sociais
@@ -40,7 +42,7 @@ Relação idade e o tempo nas redes sociais
 - Principal faixa etária que compõe as instituições de ensino superior.
   - Sendo interessante para a utilização no meio acadêmico
 
-Redes sociais como ferramenta de ensino                 
+Redes sociais como ferramenta de ensino
 ========================================================
 
 
@@ -67,10 +69,10 @@ Mídias sociais melhorando resultados
 
 - Grande parte (26,5%) não sabe afirmar se é uma boa forma melhorar resultados
   - Demonstrando a necessidade de testes validação do método
-  
+
 Tipos de uso
 ========================================================
-  
+
 ![plot of chunk unnamed-chunk-6](apresentacao-figure/unnamed-chunk-6-1.png)
 
 Tipos de uso
@@ -80,7 +82,7 @@ Tipos de uso
 
 - Parcela significativa de uso para compartilhamento de arquivos
   - Podendo demonstrar a aplicação como ferramenta de uso acadêmico (troca de informações)
-  
+
 Os problemas das mídias sociais
 ========================================================
 
@@ -104,9 +106,9 @@ Onde os alunos estão?
 ========================================================
 
 - Por onde começar?
-  - Professores devem focar nos principais: 
+  - Professores devem focar nos principais:
     - Facebook e WhatsApp
-  
+
   - Com atenção ao Youtube caso tenham grande demanda por vídeos
 
 O tempo gasto influência na crença que o seu uso pode melhorar os resultados?
@@ -120,7 +122,7 @@ Conclusão
 
 - Instituições estão começando a adotar as redes sociais para auxiliar no ensino.
 - Alunos acham que é uma técnica interessante podendo melhorar o aproveitamento em sala de aula.
-  - Com melhora do aprendizado, praticidade, facilidade no acesso às informações. 
+  - Com melhora do aprendizado, praticidade, facilidade no acesso às informações.
 - Ainda existe resistência por meio dos professores.
   - Dado a dificuldade de se controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores.
 - Vale ressaltar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem o próprio professor.

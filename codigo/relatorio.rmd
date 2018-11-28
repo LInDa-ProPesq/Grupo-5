@@ -10,11 +10,13 @@ library(readxl)
 df <- read_excel("../dados/umses_alunos_2018.xlsx")
 ```
 
-Bruno Carvalho Logerfo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151023336    
-Gustavo Hildebrand Batista&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151024693  
-João Victor Fayad Andreotti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151023115  
-Lucas Fernandes Nogueira&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151022658  
-Pedro Guilherme Somenci Silva &nbsp;&nbsp; 151024464  
+<table>
+<tr><td width=230>Bruno Carvalho Logerfo</td><td>151023336</td></tr>
+<tr><td>Gustavo Hildebrand Batista</td><td>151024693</td></tr>
+<tr><td>João Victor Fayad Andreotti</td><td>151023115</td></tr>
+<tr><td>Lucas Fernandes Nogueira</td><td>151022658</td></tr>
+<tr><td>Pedro Guilherme Somenci Silva</td><td>151024464</td></tr>
+</table>
 
 ## Introdução
 
@@ -77,11 +79,11 @@ pie(aprox, labels = lblap, edges = 100, angle = 45, col = c("blue","purple", "gr
 
 Com a facilidade do compartilhamento de dados e comunicação fornecida, a utilização das Redes Sociais traria muitos benefícios. Segundo Carvalho Jr., dentro das possibilidades de redes sociais como o Facebook, por exemplo, o professor pode:
 
-"- Postar fotos, textos e reportagens de determinado tema desenvolvido em aula, como a realidade profissional de algumas modalidades esportivas visando sempre ao debate e aprofundamento do estudo;  
-- Convidar pessoas (alunos, professores, profissionais renomados) de fora da instituição para participar do debate e estudo, promovendo intercâmbio entre os estudantes e enriquecendo a aprendizagem;  
-- Utilizar o perfil de cada aluno para conhecer sua realidade, sua história de vida, o que daria ao professor subsídios para promover uma aprendizagem significativa;  
-- Organizar os fóruns (tópicos) do grupo criado, facilitando a interação, promovendo debates e discussões que enriquecem a formação do aluno e desenvolvendo todas as dimensões do conteúdo/conhecimento com os alunos;  
-- Eleger alunos representantes de turma que poderiam ser moderadores do grupo, ajudando na eliminação de dúvidas, aprofundamento do estudo, debates, reflexões etc.;  
+"- Postar fotos, textos e reportagens de determinado tema desenvolvido em aula, como a realidade profissional de algumas modalidades esportivas visando sempre ao debate e aprofundamento do estudo;
+- Convidar pessoas (alunos, professores, profissionais renomados) de fora da instituição para participar do debate e estudo, promovendo intercâmbio entre os estudantes e enriquecendo a aprendizagem;
+- Utilizar o perfil de cada aluno para conhecer sua realidade, sua história de vida, o que daria ao professor subsídios para promover uma aprendizagem significativa;
+- Organizar os fóruns (tópicos) do grupo criado, facilitando a interação, promovendo debates e discussões que enriquecem a formação do aluno e desenvolvendo todas as dimensões do conteúdo/conhecimento com os alunos;
+- Eleger alunos representantes de turma que poderiam ser moderadores do grupo, ajudando na eliminação de dúvidas, aprofundamento do estudo, debates, reflexões etc.;
 - Divulgar eventos esportivos e culturais, dicas e orientações de estudo, de atividades físicas e de atividades de lazer."
 (CARVALHO JR, A. 2014)
 
@@ -149,9 +151,9 @@ Com os discentes constantemente conectados e a grande quantidade de opções de 
 
 Cabe salientar que um professor sempre poderá enriquecer sua aula utilizando-se de ferramentas de interação como as redes sociais. Para isso é necessário que o professor tenha conhecimento de tais ferramentas, além de um certo controle das ações que os alunos realizam através das mesmas. Não é raro encontrar casos onde instituições introduzem a tecnologia como medida de marketing, tentando passar uma imagem de modernidade, mas que muitas vezes não se sai tão bem quanto prometido.
 
-# Caso as redes sociais se tornem realmente uma ferramenta de apoio para os professores, por onde eles devem começar
+### Caso as redes sociais se tornem realmente uma ferramenta de apoio para os professores, por onde eles devem começar
 
-### Por onde começar?
+#### Por onde começar?
 
 As redes sociais são ambientes virtuais informais, sendo grande parte delas de acesso irrestrito. Muitas instituições de ensino, principalmente na modalidade Educação a Distância (EaD), oferecem suas próprias redes, plataformas virtuais abertas para seus alunos e professores com grupos de discussões, chats e troca de arquivos. (CARVALHO JR, A. 2014)
 
@@ -207,11 +209,11 @@ barplot(x,
         col=c("blue","purple", "green3", "aquamarine", "chocolate1", "chartreuse1", "cyan4", "darkgoldenrod1", "coral2"))
 ```
 
-### Conclusão
-Dado o que foi apresentado neste relatório podemos concluir que, muitas instituições estão começando a utilizar as redes sociais para auxiliar no ensino e tentar uma melhora no rendimento dos alunos. Segundo o que foi exposto neste relatório alunos acham que esta é uma técnica interessante e que pode sim melhorar o aproveitamento deles em sala de aula, como a melhora do aprendizado, praticidade, facilidade no acesso às informações, entre outras características.  
+## Conclusão
+Dado o que foi apresentado neste relatório podemos concluir que, muitas instituições estão começando a utilizar as redes sociais para auxiliar no ensino e tentar uma melhora no rendimento dos alunos. Segundo o que foi exposto neste relatório alunos acham que esta é uma técnica interessante e que pode sim melhorar o aproveitamento deles em sala de aula, como a melhora do aprendizado, praticidade, facilidade no acesso às informações, entre outras características.
 Ainda assim, professores têm certo preconceito com a utilização das redes sociais como ferramentas de auxílio, pois ainda é muito complicado de controlar, em sala de aula, o que os alunos estão fazendo em seus celulares ou computadores. Além disso, é sempre bom lembrar que por mais que as Redes ou Mídias Sociais possam auxiliar no aprendizado, as mesmas não substituem um professor de verdade, e sem o auxílio do mesmo, qualquer técnica de introdução destas ferramentas no processo de ensino se torna inútil.
 
-### Referências Bibliográficas
+## Referências Bibliográficas
 
-CARVALHO JR., Arlindo. **As redes sociais como ferramentas didáticas virtuais de interação e ensino**. Disponível em: <http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino>. Acesso em: 26 de nov. de 2018  
+CARVALHO JR., Arlindo. **As redes sociais como ferramentas didáticas virtuais de interação e ensino**. Disponível em: <http://educacaopublica.cederj.edu.br/revista/artigos/as-redes-sociais-como-ferramentas-didaticas-virtuais-de-interacao-e-ensino>. Acesso em: 26 de nov. de 2018
 MEIRA, Samara. **REDES SOCIAIS COMO FERRAMENTA DE ENSINO DOS FENÔMENOS ÓPTICOS**. Disponível em: <http://mnpef.fis.unb.br/download/dissertacao_samara.pdf>. Acesso em: 26 de nov. de 2018
