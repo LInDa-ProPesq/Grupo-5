@@ -1,5 +1,5 @@
 ---
-title: "RelatÃ³rio"
+title: "Relatório"
 output:
   pdf_document: default
   html_document: default
